@@ -1,108 +1,325 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Story Game
 
-Welcome Charlie9009,
+<img src="">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<hr>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Welcome to my program []()!
 
-## Gitpod Reminders
+<br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-
+refresh-toc -->
 
-`python3 -m http.server`
+# Table of Content
 
-A blue button should appear to click: _Make Public_,
+1. [Project goals](#project-goals)
 
-Another blue button should appear to click: _Open Browser_.
+2. [User experience](#user-experience)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    1. [Target audience](#target-audience)
 
-A blue button should appear to click: _Make Public_,
+    2. [User stories](#user-stories)
 
-Another blue button should appear to click: _Open Browser_.
+    3. [Technical design](#technical-design)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+3. [Features](#features)
 
-To log into the Heroku toolbelt CLI:
+4. [Technologies used](#technologies-used)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    1. [Languages](#languages)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    2. [Libraries and programs](#libraries-and-programs)
 
-------
+5. [Testing](#testing)
 
-## Release History
+    1. [Python](#python)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    2. [Further testing](#further-testing)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    3. [Testing user stories](#testing-user-stories)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+6. [Bugs](#bugs)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+7. [Deployment](#deployment)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+8. [Credit](#credit)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    1. [Acknowledgement](#acknowledgement)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Project goals
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* . 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## User experience
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Target audience
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* .
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### User stories
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+1. As a user I want an original story.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+2. As a user I want to be challenged when playing the game.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+3. As a user I want to be able to write my name in to the story.
 
-------
+4. As a user I want to be able to choose multiple paths.
 
-## FAQ about the uptime script
+5. As a user I want to be able to chose multiple classes.
 
-**Why have you added this script?**
+6. As a user I want to be able to see my stats.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### Site owner goals
 
-**How will this affect me?**
+7. As a site owner I want the user to be challenged.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+8. As a site owner I want the user to experience an original story. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+9. As a site owner I want the user to have multiple path options.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+10. As a site owner I want to be able to see how many has finished the story in either path.
 
-**So….?**
+11. As a site owner I want to have a loot system for the user.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Technical design
 
-**Can I opt out?**
+* Below you can see the images of the flowchart.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<details><summary>Flowchart</summary>
+<img src="docs/flowchart/pp3_flowchart.jpg">
+</details>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Features
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* **Naming your character**
 
----
+* .
+<br>
+<img src="">
 
-Happy coding!
+### User stories covered by this feature:
+
+* 3. .
+<hr>
+
+
+### Features left to implement
+
+
+## Technologies used
+
+### Languages
+
+* Python
+
+## Libraries and programs
+
+* Django 3.2.
+
+* Github
+
+* Gitpod
+
+* VS code
+
+## Testing
+
+### Validator testing
+
+#### Python
+
+<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
+<img src="">
+</details>
+
+
+## Further testing
+
+## Testing user stories
+
+1. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  The story has been written by the site owner |    None    |       Original story                         |  Original story     |
+|   Different paths changes the story   |    Choose path     |   Story will change with different paths     |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+2. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Different paths ends the game  |    Choose path     |      If the user picks a wrong path the game ends  | Works as expected   |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+3. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Write your name and it stays in the story  |  Write you name | After user writes name it will show up in the story | Works as expected   |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+4. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Different paths in the story   |  Choose path       |      Different story depending on choice           |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+5. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|   Choosing a class            |  Choose class        |   A user will be able to choose different classes  | Works as expected   |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+6. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|   Display stats               |   Pick a class       |  When picking a class the stats will be displayed  |  Works as expected  |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+7. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Different paths ends the game  |    Choose path     |      If the user picks a wrong path the game ends  | Works as expected   |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+8. . 
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  The story has been written by the site owner |    None    |       Original story                         |  Original story     |
+|   Different paths changes the story   |    Choose path     |   Story will change with different paths     |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+9. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Different paths in the story   |  Choose path       |      Different story depending on choice           |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+10. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+| When a user finishes a story, data is sent to a sheet  |   Finish the game |  Sheet will be updated       | Works as expected   |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+11. .
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Defeating the ogre generates loot  |   Defeating the ogre |    when defeating the ogre loot should be presented |  Works as expected |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+### API
+
+
+## Bugs
+
+
+
+### Known bugs
+
+
+## Deployment
+
+### Deploying to Heroku
+
+1. Use **pip3 freeze > requirements.txt** in terminal to save libraries that needs to be installed on Heroku as well.
+
+2. Log in to Heroku.
+
+3. Click on the **new** button in the top right corner and in the drop down menu choose **Create new app**.
+
+4. Choose a name for the app and a region and click **Create app**.
+
+5. Go to the **settings** tab and go to **Config Vars**, click **Reveal Config Vars** and add **CREDS** to the key field. Add creds.json content to the value field.
+
+6. In the **settings** tab add the python build pack first and then the node.js build pack.
+
+7. Go to the **deploy** tab and pick **GitHub** as deployment method.
+
+8. Search for a repository and connect to it.
+
+9. Click the button **enable automatic deploys** and then the button **deploy branch**.
+
+10. Wait for the app to build and then click the **view** button.
+
+### Forking a repository
+
+1. Log in to Github.
+2. Find the repository.
+3. In the top right corner click the fork button.
+4. Now you will have a copy of the repository in your account.
+
+### Cloning a repository
+1. Log in to Github.
+2. Find the repository.
+3. Above the file window locate the green code button and click it.
+4. To clone the repository using https copy the link.
+5. Open Git bash.
+6. Change the current directory to where you want the repository cloned.
+7. In your terminal type now type “Git clone” followed by the repository you copied.
+8. Press Enter.
+9. Done.
+
+## Credit
+
+
+### I mainly watched these videos to get inspiration for my own project
+
+
+## Acknowledgement
+
+* My Mentor Mo has been invaluable, he pushed me to challenge myself and he was able to provide consistent and helpful feedback throughout my project.
