@@ -278,23 +278,33 @@ refresh-toc -->
 
 1. Use **pip3 freeze > requirements.txt** in terminal to save libraries that needs to be installed on Heroku as well.
 
-2. Log in to Heroku.
+2. Create **Procfile** and add **web: gunicorn newsblog.wsgi**
 
-3. Click on the **new** button in the top right corner and in the drop down menu choose **Create new app**.
+3. Log in to Heroku.
 
-4. Choose a name for the app and a region and click **Create app**.
+4. Click on the **new** button in the top right corner and in the drop down menu choose **Create new app**.
 
-5. Go to the **settings** tab and go to **Config Vars**, click **Reveal Config Vars** and add **CREDS** to the key field. Add creds.json content to the value field.
+5. Choose a name for the app and a region and click **Create app**.
 
-6. In the **settings** tab add the python build pack first and then the node.js build pack.
+6. Go to the **resources** tab and go to **add-ons**, search for **postgres** and add **heroku postgres**.
 
-7. Go to the **deploy** tab and pick **GitHub** as deployment method.
+7. Go to the **settings** tab and go to **Config Vars**, click **Reveal Config Vars** and copy the DATABASE_URL**VALUE**. Add **DATABASE_URL** and **VALUE** to env in the code.
 
-8. Search for a repository and connect to it.
+8. Add **SECRET_KEY** and **VALUE** to **Config Vars** and add to env in code.
 
-9. Click the button **enable automatic deploys** and then the button **deploy branch**.
+9. Add **DATABASES** in settings.py to fork with heroku database
 
-10. Wait for the app to build and then click the **view** button.
+10. Write python3 manage.py migrate in terminal
+
+11. Add url in settings.py on **ALLOWED_HOSTS**
+
+12. Go to the **deploy** tab and pick **GitHub** as deployment method.
+
+13. Search for a repository and connect to it.
+
+14. Click the button **enable automatic deploys** and then the button **deploy branch**.
+
+15. Wait for the app to build and then click the **view** button.
 
 ### Forking a repository
 
