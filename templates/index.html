@@ -12,10 +12,24 @@
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <p class="card-text">{{post.content|slice:":200" }}</p>
           <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
+          <h1>Comments</h1>
+          {% if not post.comments.all %}
+            No comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One</a>
+            {% else %}
+              {% for comment in post.comments.all %}
+              <strong>{{ comment.name }}
+                {{ comment.created_on }}
+              </strong>
+                <br>
+                {{ comment.body }}
+                <hr>
+              {% endfor %}
+          {% endif %}
         </div>
       </div>
     {% endfor %}
 </div>
+
 
 
 {% endblock %}
