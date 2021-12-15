@@ -7,4 +7,5 @@ from . import views
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='index'),
+    path('', views.post_detail, name='post_detail')
 ]
