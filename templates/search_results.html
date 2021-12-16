@@ -4,9 +4,9 @@
 <h1>Search Results</h1>
 
 <ul>
-  {% for posts in post_list %}
+  {% for post in post_list %}
     <li>
-      {{ post.name }}, {{ post.content }}
+      {{ post.title }} {{ post.content }}
     </li>
   {% endfor %}
 </ul>

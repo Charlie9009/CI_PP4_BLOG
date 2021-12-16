@@ -3,6 +3,7 @@ Import from django and from models module.
 """
 from django.views import generic, View
 from django.shortcuts import render, get_object_or_404
+from django.db.models import Q
 from .models import Post
 from .forms import CommentForm
 
@@ -71,3 +72,7 @@ class SearchResultsView(generic.ListView):
     model = Post
     template_name = 'search_results.html'
 
+    def get_queryset(self):
+        return Post.objects.filter(
+            Q(title__icontains='more posts') | Q(content__icontains='post')
+        )
