@@ -17,7 +17,11 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
+    """
+    This class 'PostDetail' is taken from Code Institutes school project 'DjangoBlog'
+    and altered slightly for this project.
+    It is added so that a user can comment on the page
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
