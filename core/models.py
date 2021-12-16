@@ -2,6 +2,7 @@
 Imports from django
 """
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import User
 
 # Create a constant tuple to make sure if a post is in draft or published
@@ -26,6 +27,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+    def get_absolute_url(self):
+        return reverse('post_detail', kwargs={'slug': str(self.slug)})
 
 
 class Comment(models.Model):
