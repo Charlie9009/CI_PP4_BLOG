@@ -326,6 +326,14 @@ refresh-toc -->
 
 ## Credit
 
+###
+
+* [Developer mozillas](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication) site was used to get authentication up and running , in combination with Code Institutes way of importing files for html and using [Django allauth](https://django-allauth.readthedocs.io/en/latest/templates.html#overridable-templates) to connect the files.
+
+* In order to build the project [Django Central](https://djangocentral.com/building-a-blog-application-with-django/) was used to help in development.
+
+* In order to get the comment function working [Code Institutes](https://codeinstitute.net/se/) learning project *I think therefore I blog* comment class was used.
+
 
 ### I mainly watched these videos to get inspiration for my own project
 
