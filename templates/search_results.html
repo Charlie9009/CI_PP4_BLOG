@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Search Results</h1>
+
+<ul>
+  {% for posts in post_list %}
+    <li>
+      {{ post.name }}, {{ post.content }}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
