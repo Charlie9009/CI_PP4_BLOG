@@ -1,5 +1,5 @@
 """
-Import from django and from models module.
+Import from django, models module and from forms module.
 """
 from django.views import generic, View
 from django.shortcuts import render, get_object_or_404
@@ -19,15 +19,19 @@ class PostList(generic.ListView):
 
 class PostDetail(View):
     """
-    This class 'PostDetail' is taken from Code Institutes school project 'DjangoBlog'
+    This class 'PostDetail' is taken from Code Institutes school project
+    'DjangoBlog'
     and altered slightly for this project.
     It is added so that a user can comment on the page
     """
     def get(self, request, slug, *args, **kwargs):
+        """
+        Create function to filter the query of active posts and comments
+        and render them to the user.
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(active=True).order_by('created_on')
-        
 
         return render(
             request,
@@ -40,8 +44,12 @@ class PostDetail(View):
             },
         )
 
-
     def post(self, request, slug, *args, **kwargs):
+        """
+        Create function to filter the query of active posts and comments
+        Also if a user commented successfully on the page that comment is
+        saved to the site
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(active=True).order_by('created_on')
@@ -69,10 +77,18 @@ class PostDetail(View):
 
 
 class SearchResultsView(generic.ListView):
+    """
+    Setting up class to add search function to the site
+    Getting the model 'Post' and the template 'search_results'
+    """
     model = Post
     template_name = 'search_results.html'
 
     def get_queryset(self):
+        """
+        Setting up a query to search for the users input
+        and filter them with Q objects by 'title' and 'content'
+        """
         query = self.request.GET.get('q')
         search_list = Post.objects.filter(
             Q(title__icontains=query) | Q(content__icontains=query)
