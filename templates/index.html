@@ -1,11 +1,43 @@
 {% extends "base.html" %} 
 {% block content %}
 
-<div class="col-md-8 mt-3 left">
+<div class="container">
+<div class="row">
+
+<div class="col-8 col-md-8 bg-light p-3 border">
     {% for post in post_list %}
     
 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 100%;">
+        <img src="{{ post.image }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-title">{{ post.title }}</h2>
+          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+          <p class="card-text">{{post.content|slice:":200" }}</p>
+          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
+          <h1>Comments</h1>
+          {% if not post.comments.all %}
+            No comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One</a>
+            {% else %}
+              {% for comment in post.comments.all %}
+              <strong>{{ comment.name }}
+                {{ comment.created_on }}
+              </strong>
+                <br>
+                {{ comment.body }}
+                <hr>
+              {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    
+</div>
+<div class="col-3 bg-light p-3 border">
+  {% for post in post_list %}
+    
+
+    <div class="card" style="width: 100%;">
         <img src="{{ post.image }}" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">{{ post.title }}</h2>
@@ -29,7 +61,8 @@
       </div>
     {% endfor %}
 </div>
-
+</div>
+</div>
 
 
 {% endblock %}
