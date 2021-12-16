@@ -336,6 +336,8 @@ refresh-toc -->
 
 * In order to get the comment function working [Code Institutes](https://codeinstitute.net/se/) learning project *I think therefore I blog* comment class was used.
 
+* For the search function I used the [learn django](https://learndjango.com/tutorials/django-search-tutorial) site to set it up.
+
 
 ### I mainly watched these videos to get inspiration for my own project
 
