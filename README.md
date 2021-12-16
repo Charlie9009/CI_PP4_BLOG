@@ -267,7 +267,9 @@ refresh-toc -->
 
 ## Bugs
 
+* **Bug:** Search_results.html would just give a site error and not appear.
 
+    * **Fix:** I changed places in urls.py file so *search_results* was over *post_detail*.
 
 ### Known bugs
 
