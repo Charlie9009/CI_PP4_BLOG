@@ -65,3 +65,9 @@ class PostDetail(View):
                 'comment_form': CommentForm()
             },
         )
+
+
+class SearchResultsView(generic.ListView):
+    model = Post
+    template_name = 'search_results.html'
+
