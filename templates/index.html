@@ -16,6 +16,7 @@
           <p class="card-text">{{post.content|slice:":200" }}</p>
           <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
           <h1>Comments</h1>
+          {% if user.is_authenticated %}
           {% if not post.comments.all %}
             No comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One</a>
             {% else %}
@@ -27,6 +28,7 @@
                 {{ comment.body }}
                 <hr>
               {% endfor %}
+          {% endif %}
           {% endif %}
         </div>
       </div>

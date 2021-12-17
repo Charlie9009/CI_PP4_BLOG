@@ -31,7 +31,7 @@ class PostDetail(View):
         """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(active=True).order_by('created_on')
+        comments = post.comments.filter(active=True).order_by('-created_on')
 
         return render(
             request,
@@ -52,12 +52,12 @@ class PostDetail(View):
         """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(active=True).order_by('created_on')
+        comments = post.comments.filter(active=True).order_by('-created_on')
 
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
-            comment_form.instance.name = request.user.username
+            comment_form.instance.name = request.user
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
