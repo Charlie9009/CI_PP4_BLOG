@@ -1,14 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Search Results</h1>
+<div class="container mt-5 container-color">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1>Search Results</h1>
 
-<ul>
-  {% for post in post_list %}
-    <li>
-      {{ post.title }} {{ post.content }}
-    </li>
-  {% endfor %}
-</ul>
-
+      <ul>
+        {% for post in post_list %}
+        <li>
+          <a href="{% url 'post_detail' post.slug  %}" id="search-results">{{ post.title }} {{ post.content }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
 {% endblock %}

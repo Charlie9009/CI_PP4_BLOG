@@ -7,6 +7,16 @@ body {
   border: 1px black solid;
 }
 
+#search-results {
+  text-decoration: none;
+  color: black;
+}
+
+
+#search-results:hover {
+  border-bottom: 1px black solid;
+}
+
 .navbar-color-buttons:hover {
   background-color: #DEDBD2;
   border: 1px black solid;
