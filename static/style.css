@@ -2,6 +2,18 @@ body {
     background-color: rgb(226, 224, 221);
   }
 
+.nav-search-button {
+  color: black;
+  border: 1px black solid;
+}
+
+.navbar-color-buttons:hover {
+  background-color: #DEDBD2;
+  border: 1px black solid;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
 .submit-button {
   border-radius: 10px;
   border: 1px black solid;
@@ -10,7 +22,8 @@ body {
 
 .submit-button:hover {
   background-color: #B0C4B1;
-  border: 2px black solid;
+  border: 1px black solid;
+  transition: 0.3s;
 }
 
 .container-color {
