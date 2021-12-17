@@ -338,6 +338,8 @@ refresh-toc -->
 
 * For the search function I used the [learn django](https://learndjango.com/tutorials/django-search-tutorial) site to set it up and used [django project](https://docs.djangoproject.com/en/3.1/topics/db/queries/#complex-lookups-with-q-objects) to use Q objects.
 
+* Author: Katie Glueck Joe Biden [NY Times](https://www.nytimes.com/2020/11/07/us/politics/joe-biden-is-elected-the-46th-president-of-the-united-states.html).
+
 
 ### I mainly watched these videos to get inspiration for my own project
 
