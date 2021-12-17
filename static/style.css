@@ -8,6 +8,11 @@ body {
   margin-bottom: 15px;
 }
 
+.submit-button:hover {
+  background-color: #B0C4B1;
+  border: 2px black solid;
+}
+
 .container-color {
   background-color: white;
   border-radius: 25px;
