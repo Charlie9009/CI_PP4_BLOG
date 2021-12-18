@@ -7,6 +7,10 @@ body {
   border: 1px black solid;
 }
 
+.nav-search-button:hover {
+  color: black;
+}
+
 #search-results {
   text-decoration: none;
   color: black;
