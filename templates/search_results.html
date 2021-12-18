@@ -1,15 +1,16 @@
 {% extends "base.html" %}
-{% block content %}
 
+{% block content %}
+<!-- Container for search results content -->
 <div class="container mt-5 container-color-rounder">
   <div class="row">
     <div class="col-md-8 offset-md-2">
       <h1>Search Results</h1>
-
       <ul>
+        <!-- For loop to post all searched titles -->
         {% for post in post_list %}
         <li>
-          <a href="{% url 'post_detail' post.slug  %}" id="search-results">{{ post.title }} {{ post.content }}</a>
+          <a href="{% url 'post_detail' post.slug  %}" id="search-results">{{ post.title }}</a>
         </li>
         {% endfor %}
       </ul>
