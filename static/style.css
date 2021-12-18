@@ -40,15 +40,15 @@ body {
   transition: 0.3s;
 }
 
-.container-color {
+.container-color-rounder {
   background-color: white;
   border-radius: 25px;
   border: 1px black solid;
 }
 
 
-.post-container {
-    margin-top: 10px;
+.news-post-container {
+    margin: 30px auto;
 }
 
 /* Comment page */

@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 card mb-4 mt-3 left top container-color">
+    <div class="col-md-8 card mb-4 mt-3 left top container-color-rounder">
       <div class="card-body">
         <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
         <strong><p class=" text-muted">{{ post.author }} | posted on {{ post.created_on }}</p></strong>
@@ -13,7 +13,7 @@
     </div>
     
 
-    <div class="col-md-8 card mb-4 mt-3 container-color">
+    <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
       <div class="card-body">
         <!-- comments -->
         <h2>{{ comments.count }} comments</h2>
@@ -32,7 +32,7 @@
         {% endfor %}
       </div>
     </div>
-    <div class="col-md-8 card mb-4 mt-3 container-color">
+    <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
       <div class="card-body">
         {% if commented %}
         <div class="alert alert-success" role="alert">
