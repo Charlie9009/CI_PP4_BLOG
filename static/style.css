@@ -1,6 +1,21 @@
+/* Body */
+
 body {
     background-color: rgb(226, 224, 221);
   }
+
+/* Navigation bar */
+
+nav {
+  border-radius: 0 0 10px 10px;
+}
+
+.navbar-color-buttons:hover {
+  background-color: #DEDBD2;
+  border: 1px black solid;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 
 .nav-search-button {
   color: black;
@@ -11,34 +26,7 @@ body {
   color: black;
 }
 
-#search-results {
-  text-decoration: none;
-  color: black;
-}
-
-
-#search-results:hover {
-  border-bottom: 1px black solid;
-}
-
-.navbar-color-buttons:hover {
-  background-color: #DEDBD2;
-  border: 1px black solid;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.submit-button {
-  border-radius: 10px;
-  border: 1px black solid;
-  margin-bottom: 15px;
-}
-
-.submit-button:hover {
-  background-color: #B0C4B1;
-  border: 1px black solid;
-  transition: 0.3s;
-}
+/* Container for most of containers on page */
 
 .container-color-rounder {
   background-color: white;
@@ -46,6 +34,7 @@ body {
   border: 1px black solid;
 }
 
+/* Index.html */
 
 .news-post-container {
     margin: 30px auto;
@@ -66,10 +55,33 @@ body {
   transition: 0.3s;
 }
 
+/* Footer */
+
 footer {
   border-radius: 10px 10px 0 0;
 }
 
-nav {
-  border-radius: 0 0 10px 10px;
+/* search-results.html */
+
+#search-results {
+  text-decoration: none;
+  color: black;
+}
+
+#search-results:hover {
+  border-bottom: 1px black solid;
+}
+
+/* Login, signup and register pages */
+
+.submit-button {
+  border-radius: 10px;
+  border: 1px black solid;
+  margin-bottom: 15px;
+}
+
+.submit-button:hover {
+  background-color: #B0C4B1;
+  border: 1px black solid;
+  transition: 0.3s;
 }
