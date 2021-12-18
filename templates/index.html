@@ -1,20 +1,16 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% block content %}
 
 <div class="container news-post-container">
-<div class="row ">
-
-<div class="col-8 col-md-8 bg-light p-3 border container-color-rounder">
-    {% for post in post_list %}
-    
-
-    <div class="card inner-post-container" style="width: 100%;">
+  <div class="row ">
+    <div class="col-8 col-md-8 bg-light p-3 border container-color-rounder">
+      {% for post in post_list %}
+      <div class="card inner-post-container" style="width: 100%;">
         <img src="{{ post.image }}" class="card-img-top" alt="...">
         <div class="card-body">
           <h1 class="card-title">{{ post.title }}</h1>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <p class="card-text">{{post.content|slice:":200" }}</p>
-          
           <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read The Hole Article Here</a>
           <hr>
           <h2>Comments</h2>
@@ -22,59 +18,51 @@
           <p>Log in to see comments</p>
           {% else %}
           {% if not post.comments.all %}
-            No Comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One Here</a>
-            {% else %}
-              {% for comment in post.comments.all %}
-              <strong>{{ comment.name }} | {{ comment.created_on }}
-              </strong>
-                <br>
-                <p>
-                {{ comment.body }}
-              </p>
-                <hr>
-              {% endfor %}
+          <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One Here</a></p>
+          {% else %}
+          {% for comment in post.comments.all %}
+          <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
+          <br>
+          <p>{{ comment.body }}</p>
+          <hr>
+          {% endfor %}
           {% endif %}
           {% endif %}
         </div>
       </div>
       <hr>
-    {% endfor %}
-    
-    
-</div>
-<div class="col-4 bg-light p-3 border container-color-rounder">
-  {% for post in post_list %}
-    
+      {% endfor %}
+    </div>
 
-    <div class="card inner-post-container" style="width: 100%;">
+    <div class="col-4 bg-light p-3 border container-color-rounder">
+      {% for post in post_list %}
+      <div class="card inner-post-container" style="width: 100%;">
         <img src="{{ post.image }}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h2 class="card-title">{{ post.title }}</h2>
+          <h1 class="card-title">{{ post.title }}</h1>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <p class="card-text">{{post.content|slice:":200" }}</p>
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More</a>
-          <h1>Comments</h1>
+          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read The Hole Article Here</a>
+          <h2>Comments</h2>
           {% if not user.is_authenticated %}
           <p>Log in to see comments</p>
           {% else %}
           {% if not post.comments.all %}
-            No comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One</a>
-            {% else %}
-              {% for comment in post.comments.all %}
-              <strong>{{ comment.name }}
-                {{ comment.created_on }}
-              </strong>
-                <br>
-                {{ comment.body }}
-                <hr>
-              {% endfor %}
+          <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One Here</a></p>
+          {% else %}
+          {% for comment in post.comments.all %}
+          <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
+          <br>
+          <p>{{ comment.body }}</p>
+          <hr>
+          {% endfor %}
           {% endif %}
           {% endif %}
         </div>
       </div>
-    {% endfor %}
-</div>
-</div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 
