@@ -19,16 +19,12 @@
         <h2 class="post-comment-headling">{{ comments.count }} Comments</h2>
 
         {% for comment in comments %}
-        <div class="comments" style="padding: 10px;">
-          <p class="font-weight-bold">
-            {{ comment.name }}
-            <span class=" text-muted font-weight-normal">
-              {{ comment.created_on }}
-            </span>
-          </p>
-          {{ comment.body | linebreaks }}
-          <hr>
+        <div>
+          <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
+          <br>
+          <p>{{ comment.body }}</p>
         </div>
+        <hr>
         {% endfor %}
       </div>
     </div>
@@ -39,7 +35,7 @@
           Your comment have been posted
         </div>
         {% else %}
-        <h3>Leave a comment</h3>
+        <h3 class="post-comment-headling">Leave a comment</h3>
         <form method="post" >
           {{ comment_form | crispy }}
           {% csrf_token %}

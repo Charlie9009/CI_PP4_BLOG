@@ -51,9 +51,11 @@
           <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One Here</a></p>
           {% else %}
           {% for comment in post.comments.all %}
-          <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
-          <br>
-          <p>{{ comment.body }}</p>
+          <div>
+            <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
+            <br>
+            <p>{{ comment.body }}</p>
+          </div>
           <hr>
           {% endfor %}
           {% endif %}
