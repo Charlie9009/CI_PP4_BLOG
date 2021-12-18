@@ -40,6 +40,10 @@ nav {
     margin: 30px auto;
 }
 
+.inner-post-container {
+  border-radius: 25px;
+}
+
 /* Comment page */
 
 #comment-submit-button {
