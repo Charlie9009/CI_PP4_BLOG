@@ -4,8 +4,8 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body">
+    <div class="col-md-8 card mb-4 mt-3 left top container-color">
+      <div class="card-body ">
         <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
         <strong><p class=" text-muted">{{ post.author }} | posted on {{ post.created_on }}</p></strong>
         <p class="card-text ">{{ post.content | safe }}</p>
@@ -13,7 +13,7 @@
     </div>
     
 
-    <div class="col-md-8 card mb-4  mt-3 ">
+    <div class="col-md-8 card mb-4 mt-3 container-color">
       <div class="card-body">
         <!-- comments -->
         <h2>{{ comments.count }} comments</h2>
@@ -32,15 +32,15 @@
         {% endfor %}
       </div>
     </div>
-    <div class="col-md-8 card mb-4  mt-3 ">
+    <div class="col-md-8 card mb-4 mt-3 container-color">
       <div class="card-body">
         {% if commented %}
         <div class="alert alert-success" role="alert">
-          Your comment is awaiting moderation
+          Your comment have been posted
         </div>
         {% else %}
         <h3>Leave a comment</h3>
-        <form method="post" style="margin-top: 1.3em;">
+        <form method="post" >
           {{ comment_form | crispy }}
           {% csrf_token %}
           <button id="comment-submit-button" type="submit">Submit</button>
