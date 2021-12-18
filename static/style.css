@@ -47,6 +47,10 @@ nav {
 
 /* Comment page */
 
+.post-comment-headling {
+  text-decoration: underline solid;
+}
+
 #comment-submit-button {
   border-radius: 10px;
   border: 1px black solid;
