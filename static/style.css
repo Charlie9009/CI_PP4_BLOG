@@ -45,6 +45,20 @@ nav {
   margin-bottom: 10px;
 }
 
+/* Empty comment link */
+
+.empty-comment-link {
+  text-decoration: none;
+  border-bottom: 1px black dotted;
+  color: black;
+}
+
+.empty-comment-link:hover {
+  text-decoration: none;
+  border-bottom: solid;
+  color: black;
+}
+
 /* Comment page */
 
 .post-comment-headling {

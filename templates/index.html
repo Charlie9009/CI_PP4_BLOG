@@ -14,8 +14,8 @@
           <h1 class="card-title post-comment-headling">{{ post.title }}</h1>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <p class="card-text">{{post.content|slice:":200" }}</p>
-          <!-- Link to read the hole article -->
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read The Hole Article Here</a>
+          <!-- Link to read the entire article -->
+          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-secondary">Read The Entire Article Here</a>
           <hr>
           <!-- Comments, If/Else statement used so not logged in users cant see comments -->
           <h2 class="post-comment-headling">Comments</h2>
@@ -24,7 +24,7 @@
           {% else %}
           <!-- If/Else statement used to determine if there has not been any comments yet, if there arent a link is shown -->
           {% if not post.comments.all %}
-          <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One Here</a></p>
+          <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}" class="empty-comment-link">Add One Here</a></p>
           {% else %}
           <!-- Comment content -->
           {% for comment in post.comments.all %}
@@ -51,8 +51,8 @@
           <h1 class="card-title post-comment-headling">{{ post.title }}</h1>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <p class="card-text">{{post.content|slice:":200" }}</p>
-          <!-- Link to read the hole article -->
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read The Hole Article Here</a>
+          <!-- Link to read the Entire article -->
+          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-secondary">Read The Entire Article Here</a>
           <hr>
           <!-- Comments, If/Else statement used so not logged in users cant see comments -->
           <h2 class="post-comment-headling">Comments</h2>
@@ -61,7 +61,7 @@
           {% else %}
           <!-- If/Else statement used to determine if there has not been any comments yet, if there arent a link is shown -->
           {% if not post.comments.all %}
-          <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}">Add One Here</a></p>
+          <p>No Comments Yet <a href="{% url 'post_detail' post.slug  %}" class="empty-comment-link">Add One Here</a></p>
           {% else %}
           <!-- Comment content -->
           {% for comment in post.comments.all %}
