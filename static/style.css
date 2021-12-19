@@ -61,6 +61,11 @@ nav {
 
 /* Comment page */
 
+.comment-container {
+  border-bottom: 1px black solid;
+  margin-top: 10px;
+}
+
 .post-comment-headling {
   text-decoration: underline solid;
 }

@@ -29,10 +29,11 @@
           {% else %}
           <!-- Comment content -->
           {% for comment in post.comments.all %}
-          <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
-          <br>
-          <p>{{ comment.body }}</p>
-          <hr>
+          <div class="comment-container">
+            <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
+            <br>
+            <p>{{ comment.body }}</p>
+          </div>
           {% endfor %}
           {% endif %}
           {% endif %}
