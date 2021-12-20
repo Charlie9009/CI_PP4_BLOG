@@ -4,7 +4,7 @@ Import from django, models module and from forms module.
 from django.views import generic, View
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Post, Questions
+from .models import Post, Question
 from .forms import CommentForm
 
 
@@ -97,5 +97,5 @@ class SearchResultsView(generic.ListView):
 
 
 class QuestionView(generic.ListView):
-    model = Questions
+    model = Question
     template_name = 'questions.html'

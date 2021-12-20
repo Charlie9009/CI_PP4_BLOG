@@ -2,7 +2,7 @@
 Import from django and from models module
 """
 from django.contrib import admin
-from .models import Post, Comment, Questions
+from .models import Post, Comment, Question
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -34,7 +34,7 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(active=True)
 
 
-@admin.register(Questions)
+@admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):     
     list_display = ('title', 'question', 'answer', 'created_on', 'answered_on')
     list_filter = ('title', 'question', 'answer', 'created_on', 'answered_on')

@@ -60,7 +60,7 @@ class Comment(models.Model):
         return f'Comment {self.body} by {self.name}'
 
 
-class Questions(models.Model):
+class Question(models.Model):
     """
     Create a model for a questions page
     """
@@ -68,7 +68,7 @@ class Questions(models.Model):
     question = models.TextField(max_length=200)
     answer = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
-    answered_on = models.DateTimeField(auto_now=True)
+    answered_on = models.BooleanField(default=False)
 
     class Meta:
         """
