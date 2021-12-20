@@ -2,7 +2,7 @@
 Import from django and from models module
 """
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Questions
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -32,3 +32,6 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(active=True)
+
+
+
