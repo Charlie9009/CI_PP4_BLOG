@@ -58,3 +58,26 @@ class Comment(models.Model):
         Returns an f string of a comments body and name
         """
         return f'Comment {self.body} by {self.name}'
+
+
+class Questions(models.Model):
+    """
+    Create a model for a questions page
+    """
+    title = models.CharField(max_length=100)
+    question = models.TextField(max_length=200)
+    answer = models.TextField(blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    answered_on = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        """
+        Order by descending order
+        """
+        ordering = ['-created_on']
+
+    def __str__(self):
+        """
+        Return title string
+        """
+        return self.title
