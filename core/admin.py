@@ -34,4 +34,9 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(active=True)
 
 
-
+@admin.register(Questions)
+class QuestionAdmin(admin.ModelAdmin):     
+    list_display = ('title', 'question', 'answer', 'created_on', 'answered_on')
+    list_filter = ('title', 'question', 'answer', 'created_on', 'answered_on')
+    search_fields = ('title', 'question', 'created_on', 'answered_on')
+    actions = ('answered_on')
