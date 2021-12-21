@@ -28,6 +28,11 @@ nav {
 
 /* Container for most of containers on page */
 
+.main-header {
+  text-align: center;
+  margin-top: 3%;
+}
+
 .container-color-rounder {
   background-color: white;
   border-radius: 25px;
