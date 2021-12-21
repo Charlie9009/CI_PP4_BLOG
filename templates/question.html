@@ -3,11 +3,10 @@
 {% block content %}
 
 <h1 class="main-header">Questions</h1>
+{% for question in question_list %}
 <div class="container mt-5 news-post-container">
     <div class="row">
         <div class="col-md-8 offset-md-2 container-color-rounder">
-
-            {% for question in question_list %}
             <h1 class="post-comment-headling">{{ question.title }}</h1>
             <strong>
                 <p class="text-muted">posted on {{ question.created_on }}</p>
@@ -18,12 +17,9 @@
             <div>
                 <p>{{ question.answer }}</p>
             </div>
-
         </div>
-
-        {% endfor %}
     </div>
 </div>
-</div>
-</div>
+{% endfor %}
+
 {% endblock content %}
