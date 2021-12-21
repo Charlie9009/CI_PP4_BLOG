@@ -3,22 +3,22 @@
 {% block content %}
 
 <h1 class="main-header">Questions</h1>
-<div class="container">
+<div class="container mt-5 news-post-container">
     <div class="row">
-        <div class="col-md-8 card mb-4 mt-3 left top container-color-rounder">
-            <div class="card-body">
-                {% for question in question_list %}
-                <h1 class="post-comment-headling">{{ question.title }}</h1>
-                <strong>
-                    <p class="text-muted">posted on {{ question.created_on }}</p>
-                </strong>
-                <p class="card-text">{{ question.question | safe }}</p>
-                <hr>
-                <h2 class="post-comment-headling">Answer</h2>
-                <div>
-                    <p>{{ question.answer }}</p>
-                </div>
+        <div class="col-md-8 offset-md-2 container-color-rounder">
+
+            {% for question in question_list %}
+            <h1 class="post-comment-headling">{{ question.title }}</h1>
+            <strong>
+                <p class="text-muted">posted on {{ question.created_on }}</p>
+            </strong>
+            <p class="card-text">{{ question.question | safe }}</p>
+            <hr>
+            <h2 class="post-comment-headling">Answer</h2>
+            <div>
+                <p>{{ question.answer }}</p>
             </div>
+
         </div>
 
         {% endfor %}
