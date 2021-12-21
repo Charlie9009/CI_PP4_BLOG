@@ -26,12 +26,14 @@ nav {
   color: black;
 }
 
-/* Container for most of containers on page */
+/* Main Headers */
 
 .main-header {
   text-align: center;
   margin-top: 3%;
 }
+
+/* Container for most of containers on page */
 
 .container-color-rounder {
   background-color: white;
@@ -103,6 +105,12 @@ footer {
 
 #search-results:hover {
   border-bottom: 1px black solid;
+}
+
+/* questions.html */
+
+.question-search-container-text {
+  text-align: center;
 }
 
 /* Login, signup and register pages */
