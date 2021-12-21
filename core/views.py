@@ -97,5 +97,5 @@ class SearchResultsView(generic.ListView):
 
 
 class QuestionView(generic.ListView):
-    model = Question
+    queryset = Question.objects.filter(answered_on=True).order_by('-answered_on')
     template_name = 'question.html'
