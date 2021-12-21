@@ -47,6 +47,10 @@ nav {
     margin: 30px auto;
 }
 
+.edge-color-style {
+  background-color: black;
+}
+
 .inner-post-container {
   border-radius: 25px;
   margin-bottom: 10px;
