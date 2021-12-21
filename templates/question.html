@@ -3,20 +3,25 @@
 {% block content %}
 
 
-<!-- Container for news post -->
 <div class="container">
     <div class="row">
-        <div class="col-md-8 card mb-4 mt-3 left top container-color-rounder">
-            <div class="card-body">
-                {% for question in question_list %}
-                <h1 class="post-comment-headling">{{ question.title }}</h1>
-                <strong>
-                    <p class="text-muted">{{ question.created_on }} | posted on {{ post.created_on }}</p>
-                </strong>
-                <p class="card-text">{{ question.question | safe }}</p>
-                {% endfor %}
-            </div>
+      <div class="col-md-8 card mb-4 mt-3 left top container-color-rounder">
+        <div class="card-body">
+            {% for question in question_list %}
+          <h1 class="post-comment-headling">{{ question.title }}</h1>
+          <strong><p class="text-muted">posted on {{ question.created_on }}</p></strong>
+          <p class="card-text">{{ question.question | safe }}</p>
         </div>
-    </div>
-</div>
+      </div>
+      <!-- Container for Comments, for loop used to get all comments -->
+      <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
+        <div class="card-body">
+          <h2 class="post-comment-headling">Answer</h2>
+          <div>
+            <p>{{ question.answer }}</p>
+          </div>
+          <hr>
+          {% endfor %}
+        </div>
+      </div>
 {% endblock content %}
