@@ -98,4 +98,4 @@ class SearchResultsView(generic.ListView):
 
 class QuestionView(generic.ListView):
     model = Question
-    template_name = 'questions.html'
+    template_name = 'question.html'

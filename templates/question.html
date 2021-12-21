@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+
+<!-- Container for news post -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4 mt-3 left top container-color-rounder">
+      <div class="card-body">
+        <h1 class="post-comment-headling">{{ post.title }}</h1>
+        <strong><p class="text-muted">{{ post.author }} | posted on {{ post.created_on }}</p></strong>
+        <p class="card-text">{{ post.content | safe }}</p>
+      </div>
+    </div>
+    <!-- Container for Comments, for loop used to get all comments -->
+    <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
+      <div class="card-body">
+        <h2 class="post-comment-headling">{{ comments.count }} Comments</h2>
+        {% for comment in comments %}
+        <div>
+          <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
+          <br>
+          <p>{{ comment.body }}</p>
+        </div>
+        <hr>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- Container for successfull comment and for comment form, if/else statement used to determine which -->
+    <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
+      <div class="card-body">
+        <!-- Container successfull comment -->
+        {% if commented %}
+        <div class="alert alert-success" role="alert">
+          Your comment have been posted
+        </div>
+        <!-- Container for comment form -->
+        {% else %}
+        <h3 class="post-comment-headling">Leave a comment</h3>
+        <form method="post">
+          {{ comment_form }}
+          {% csrf_token %}
+          <button id="comment-submit-button" type="submit">Submit</button>
+        </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
