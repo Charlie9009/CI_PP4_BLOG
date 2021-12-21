@@ -107,7 +107,11 @@ footer {
   border-bottom: 1px black solid;
 }
 
-/* questions.html */
+#search-results-list {
+  list-style: none;
+}
+
+/* question.html */
 
 .question-search-container-text {
   text-align: center;

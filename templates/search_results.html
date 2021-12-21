@@ -4,12 +4,12 @@
 <!-- Container for search results content -->
 <div class="container mt-5 container-color-rounder">
   <div class="row">
-    <div class="col-md-8 offset-md-2">
+    <div class="col-md-8 offset-md-2 question-search-container-text">
       <h1>Search Results</h1>
       <ul>
         <!-- For loop to post all searched titles -->
         {% for post in post_list %}
-        <li>
+        <li id="search-results-list">
           <a href="{% url 'post_detail' post.slug  %}" id="search-results">{{ post.title }}</a>
         </li>
         {% endfor %}
