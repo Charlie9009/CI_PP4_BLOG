@@ -40,8 +40,10 @@ class Comment(models.Model):
     """
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments'
-    )
-    name = models.CharField(max_length=80, blank=False)
+        )
+    name = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='name'
+        )
     body = models.TextField(max_length=130, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
