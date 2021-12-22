@@ -38,6 +38,7 @@ class PostDetail(View):
         }
         return render(request, 'post_detail.html', context)
 
+
     def post(self, request, pk, *args, **kwargs):
         post = Post.objects.get(pk=pk)
         comment_form = CommentForm(request.POST)
@@ -54,6 +55,22 @@ class PostDetail(View):
             'comment-form': comment_form,
         }
         return render(request, 'post_detail.html', context)
+
+
+class PostEditView(UpdateView):
+    model = Post
+    fields = ['content']
+    template_name = 'edit_detail.html'
+    
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('post_detail', kwargs={'pk': pk})
+
+
+class PostDeleteView(DeleteView):
+    model = Post
+    template_name = 'delete_detail.html'
+    success_url = reverse_lazy('index')
 
 
 class SearchResultsView(generic.ListView):
