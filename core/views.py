@@ -34,7 +34,7 @@ class PostDetail(View):
         context = {
             'post': post,
             'comments': comments,
-            'comment-form': comment_form,
+            'comment_form': comment_form,
         }
         return render(request, 'post_detail.html', context)
 
@@ -42,9 +42,10 @@ class PostDetail(View):
     def post(self, request, pk, *args, **kwargs):
         post = Post.objects.get(pk=pk)
         comment_form = CommentForm(request.POST)
+
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
-            comment.author = request.user
+            comment.name = request.user
             comment.post = post
             comment.save()
         
@@ -52,7 +53,7 @@ class PostDetail(View):
         context = {
             'post': post,
             'comments': comments,
-            'comment-form': comment_form,
+            'comment_form': comment_form,
         }
         return render(request, 'post_detail.html', context)
 
