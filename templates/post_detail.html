@@ -13,6 +13,10 @@
         <p class="card-text">{{ post.content | safe }}</p>
       </div>
     </div>
+    {% if request.user == post.author %}
+                <a href="{% url 'edit_detail' post.pk %}"></a>
+                <a href="{% url 'delete_detail' post.pk %}"></a>
+                {% endif %}
     <!-- Container for Comments, for loop used to get all comments -->
     <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
       <div class="card-body">
@@ -42,9 +46,12 @@
           {{ comment_form | crispy }}
           {% csrf_token %}
           <button id="comment-submit-button" type="submit">Submit</button>
+          
+        </form>
+        {% if request.user == comment.name %}
           <a href="{% url 'edit_detail' post.pk %}">Edit</a>
           <a href="{% url 'delete_detail' post.pk %}">Delete</a>
-        </form>
+          {% endif %}
         {% endif %}
       </div>
     </div>
