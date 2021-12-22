@@ -42,6 +42,8 @@
           {{ comment_form | crispy }}
           {% csrf_token %}
           <button id="comment-submit-button" type="submit">Submit</button>
+          <a href="{% url 'edit_detail' post.pk %}">Edit</a>
+          <a href="{% url 'delete_detail' post.pk %}">Delete</a>
         </form>
         {% endif %}
       </div>
