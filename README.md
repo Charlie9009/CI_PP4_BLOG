@@ -338,7 +338,11 @@ refresh-toc -->
 
 * For the search function I used the [learn django](https://learndjango.com/tutorials/django-search-tutorial) site to set it up and used [django project](https://docs.djangoproject.com/en/3.1/topics/db/queries/#complex-lookups-with-q-objects) to use Q objects.
 
-* Author: Katie Glueck Joe Biden [NY Times](https://www.nytimes.com/2020/11/07/us/politics/joe-biden-is-elected-the-46th-president-of-the-united-states.html).
+* Author: By Stephen Collinson and Maeve Reston [CNN](https://edition.cnn.com/2020/11/07/politics/joe-biden-wins-us-presidential-election/index.html).
+
+* [The Guardian](https://www.theguardian.com/world/2021/dec/21/eu-in-row-over-inclusion-of-gas-and-nuclear-in-sustainability-guidance)
+
+* Author: Neil Lupin/Getty [The Rolling Stone](https://www.rollingstone.com/music/music-news/eric-clapton-management-statement-widow-bootleg-cd-1275158/)
 
 
 ### I mainly watched these videos to get inspiration for my own project
