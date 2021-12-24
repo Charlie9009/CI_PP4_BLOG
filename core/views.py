@@ -63,7 +63,7 @@ class PostDetail(generic.DetailView):
 
 class PostCreate(generic.CreateView):
     model = Post
-    template_name = 'post_form.html'
+    template_name = 'post_create.html'
     fields = ['title', 'content']
 
 

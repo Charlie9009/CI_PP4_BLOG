@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Container for signup page content -->
+<div class="col-md-8 card mb-4 mt-3 container-color-rounder">
+  <div class="card-body">
+    <!-- Container successfull comment -->
+    <!-- Container for comment form -->
+    <form method="post">
+      {{ form | crispy }}
+      {% csrf_token %}
+      <button id="comment-submit-button" type="submit">Submit</button>
+      
+    </form>
+
+  </div>
+</div>
+{% endblock content %}
