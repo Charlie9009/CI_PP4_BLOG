@@ -2,18 +2,22 @@
 Import from django, models module and from forms module.
 """
 from django.views import generic, View
+from django.views.generic import ListView
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
 from .models import Post, Question, Comment
 from .forms import CommentForm
 
 
-class PostList(generic.ListView):
+class PostList(ListView):
     """
     Using ListView to render to the index.html.
     Also filtering so only published posts show up
     """
-    
+    model = Post
+    template_name = 'index.html'
+    context_object_name = 'posts'
+    ordering = ['-created_on']
 
 
 class PostDetail(View):
