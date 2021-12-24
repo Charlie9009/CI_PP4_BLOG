@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Container for signup page content -->
+<div class="col-md-8 card mb-4 mt-3 container-color-rounder">
+  <div class="card-body">
+    <!-- Container successfull comment -->
+    <!-- Container for comment form -->
+    <form method="post">
+        {% csrf_token %}
+        <h2>Are you sure "{{ post.title }}"</h2>
+      <button id="comment-submit-button" type="submit">Yes Delete</button>
+      <a id="comment-submit-button" href="{% url 'post_detail' post.id %}">Cancel</a>
+      
+    </form>
+
+  </div>
+</div>
+{% endblock content %}
