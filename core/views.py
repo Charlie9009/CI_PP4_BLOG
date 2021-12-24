@@ -94,10 +94,18 @@ class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
         return False
 
 
-class PostDelete(LoginRequiredMixin, generic.DeleteView):
+class PostDelete(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     model = Post
     template_name = 'post_delete_confirm.html'
     success_url = '/'
+    """
+    Check if specific post is the authors so they can delete
+    """
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
 
 
 class SearchResultsView(generic.ListView):
