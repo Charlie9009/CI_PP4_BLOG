@@ -83,7 +83,10 @@ class PostUpdate(generic.UpdateView):
         return super().form_valid(form)
 
 
-
+class PostDelete(generic.DeleteView):
+    model = Post
+    template_name = 'post_delete_confirm.html'
+    success_url = '/'
 
 
 class SearchResultsView(generic.ListView):
