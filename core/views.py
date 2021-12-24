@@ -29,7 +29,7 @@ class PostDetail(generic.DetailView):
     """
     model = Post
     template_name = 'post_detail.html'
-    
+
     def get(self, request, pk, *args, **kwargs):
         post = Post.objects.get(pk=pk)
         comment_form = CommentForm()
@@ -59,6 +59,14 @@ class PostDetail(generic.DetailView):
             'comment_form': comment_form,
         }
         return render(request, 'post_detail.html', context)
+
+
+class PostCreate(generic.CreateView):
+    model = Post
+    template_name = 'post_form.html'
+    fields = ['title', 'content']
+
+
 
 
 
