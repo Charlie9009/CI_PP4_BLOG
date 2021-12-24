@@ -4,7 +4,7 @@ Import from django, models module and from forms module.
 from django.views import generic, View
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Post, Question, Comment
 from .forms import CommentForm
 
@@ -74,14 +74,24 @@ class PostCreate(LoginRequiredMixin, generic.CreateView):
         return super().form_valid(form)
 
 
-class PostUpdate(LoginRequiredMixin, generic.UpdateView):
+class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     model = Post
     template_name = 'post_create.html'
     fields = ['title', 'content']
-
+    """
+    Set author for form before submit.
+    """
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+    """
+    Check if specific post is the authors so they can update
+    """
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
 
 
 class PostDelete(LoginRequiredMixin, generic.DeleteView):
