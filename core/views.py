@@ -4,6 +4,7 @@ Import from django, models module and from forms module.
 from django.views import generic, View
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Post, Question, Comment
 from .forms import CommentForm
 
@@ -61,7 +62,7 @@ class PostDetail(generic.DetailView):
         return render(request, 'post_detail.html', context)
 
 
-class PostCreate(generic.CreateView):
+class PostCreate(LoginRequiredMixin, generic.CreateView):
     model = Post
     template_name = 'post_create.html'
     fields = ['title', 'content']
@@ -73,7 +74,7 @@ class PostCreate(generic.CreateView):
         return super().form_valid(form)
 
 
-class PostUpdate(generic.UpdateView):
+class PostUpdate(LoginRequiredMixin, generic.UpdateView):
     model = Post
     template_name = 'post_create.html'
     fields = ['title', 'content']
@@ -83,7 +84,7 @@ class PostUpdate(generic.UpdateView):
         return super().form_valid(form)
 
 
-class PostDelete(generic.DeleteView):
+class PostDelete(LoginRequiredMixin, generic.DeleteView):
     model = Post
     template_name = 'post_delete_confirm.html'
     success_url = '/'
