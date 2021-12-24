@@ -1,9 +1,7 @@
 """
 Import from django, models module and from forms module.
 """
-from django.urls import reverse_lazy
 from django.views import generic, View
-from django.views.generic.edit import UpdateView, DeleteView
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
 from .models import Post, Question, Comment
@@ -15,8 +13,7 @@ class PostList(generic.ListView):
     Using ListView to render to the index.html.
     Also filtering so only published posts show up
     """
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
+    
 
 
 class PostDetail(View):
@@ -57,21 +54,6 @@ class PostDetail(View):
         }
         return render(request, 'post_detail.html', context)
 
-
-class PostEditView(UpdateView):
-    model = Post
-    fields = ['content']
-    template_name = 'edit_detail.html'
-    
-    def get_success_url(self):
-        pk = self.kwargs['pk']
-        return reverse_lazy('post_detail', kwargs={'pk': pk})
-
-
-class PostDeleteView(DeleteView):
-    model = Post
-    template_name = 'delete_detail.html'
-    success_url = reverse_lazy('index')
 
 
 class SearchResultsView(generic.ListView):
