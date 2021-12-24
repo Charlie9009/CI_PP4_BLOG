@@ -65,8 +65,12 @@ class PostCreate(generic.CreateView):
     model = Post
     template_name = 'post_create.html'
     fields = ['title', 'content']
-
-
+    """
+    Set author for form before submit.
+    """
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
 
 
