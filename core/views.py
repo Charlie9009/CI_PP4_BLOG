@@ -76,7 +76,7 @@ class PostCreate(LoginRequiredMixin, generic.CreateView):
 
 class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     model = Post
-    template_name = 'post_create.html'
+    template_name = 'post_update.html'
     fields = ['title', 'content']
     """
     Set author for form before submit.
