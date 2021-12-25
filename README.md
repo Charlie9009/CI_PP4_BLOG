@@ -1,4 +1,4 @@
-# Story Game
+# News Blog
 
 <img src="">
 
@@ -49,7 +49,7 @@ refresh-toc -->
 
 ## Project goals
 
-* . 
+* The goal of this project is for the site owner to practice Django and to create a News Blog for other users.
 
 ## User experience
 
