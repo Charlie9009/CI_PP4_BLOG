@@ -20,7 +20,7 @@ class PostList(generic.ListView):
     ordering = ['-created_on']
 
 
-class PostDetail(generic.DetailView):
+class PostDetail(LoginRequiredMixin, generic.DetailView):
     """
     This class 'PostDetail' was first taken from Code Institutes school project
     'DjangoBlog'

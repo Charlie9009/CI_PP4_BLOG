@@ -7,10 +7,11 @@
     <div class="col-md-8 offset-md-2 question-search-container-text">
       <h1>Search Results</h1>
       <ul>
-        <!-- For loop to post all searched titles -->
+        <!-- If/Else statement to restrict search results for non logged in users. For loop to post all searched titles -->
         {% if not user.is_authenticated %}
           <a href="{% url 'account_login' %}" id="search-results">Log in to see search results</a>
         {% else %}
+        <!-- For loop to post all searched titles -->
         {% for post in post_list %}
         <li id="search-results-list">
           <a href="{% url 'post_detail' post.pk  %}" id="search-results">{{ post.title }}</a>
