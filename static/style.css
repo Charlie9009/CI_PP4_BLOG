@@ -1,13 +1,14 @@
 /* Body */
 
 body {
-    background-color: rgb(226, 224, 221);
+    background-color: #5D5C61;
   }
 
 /* Navigation bar */
 
 nav {
   border-radius: 0 0 10px 10px;
+  background-color: #557A95;
 }
 
 .navbar-color-buttons:hover {
@@ -36,7 +37,7 @@ nav {
 /* Container for most of containers on page */
 
 .container-color-rounder {
-  background-color: white;
+  background-color: #B1A296;
   border-radius: 25px;
   border: 1px black solid;
 }
@@ -98,6 +99,7 @@ nav {
 
 footer {
   border-radius: 10px 10px 0 0;
+  background-color: #557A95;
 }
 
 /* search-results.html */
