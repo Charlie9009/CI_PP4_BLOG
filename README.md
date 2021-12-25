@@ -55,33 +55,44 @@ refresh-toc -->
 
 ### Target audience
 
-* .
+* This site is targeted towards people who would like to share news.
 
 ### User stories
 
-1. As a user I want an original story.
+#### Site Visitor
 
-2. As a user I want to be challenged when playing the game.
+1. As a Site Visitor I can read news so I can keep up to speed with the world.
 
-3. As a user I want to be able to write my name in to the story.
+2. As a Site Visitor I can see a list of news posts so that I can choose which ones to read.
 
-4. As a user I want to be able to choose multiple paths.
+3. As a Site Visitor I can create an account so that I can interact with the content, add my own content and search for content.
 
-5. As a user I want to be able to chose multiple classes.
+4. As a Site Visitor I can view questions other people have had about the site.
 
-6. As a user I want to be able to see my stats.
+5. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
+
+#### Site User
+
+6. As a Site User I can create, read, update and delete posts so that I can manage my content.
+
+7. As A Site User I can search for posts so I can find the relevant one for me.
+
+8. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+
+9. As a Site User I can read comments so that I can get a nuanced view of the news.
+
+10. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
+
 
 #### Site owner goals
 
-7. As a site owner I want the user to be challenged.
+11. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
 
-8. As a site owner I want the user to experience an original story. 
+12. As a Site Admin I can draft news posts so that I dont have to finish writing the news posts right way.
 
-9. As a site owner I want the user to have multiple path options.
+13. As a Site Admin I can search for posts so that I can find posts I am interested in.
 
-10. As a site owner I want to be able to see how many has finished the story in either path.
-
-11. As a site owner I want to have a loot system for the user.
+14. As a Site Admin I can answer questions so that users feel included in the site.
 
 ### Technical design
 
