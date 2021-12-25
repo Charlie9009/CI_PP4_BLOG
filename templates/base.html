@@ -51,11 +51,13 @@
             </li>
           </ul>
           <!-- Search Field -->
+          {% if user.is_authenticated %}
           <form action="{% url 'search_results' %}" method="get" class="d-flex">
             {% csrf_token %}
             <input name="q" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success navbar-color-buttons nav-search-button" type="submit">Search</button>
           </form>
+          {% endif %}
         </div>
       </div>
     </nav>
