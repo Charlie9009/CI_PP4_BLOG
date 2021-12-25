@@ -10,5 +10,8 @@ class CommentForm(forms.ModelForm):
     Create class to generate form for Comments.
     """
     class Meta:
+        """
+        Use Comment model with the body field
+        """
         model = Comment
         fields = ('body',)
