@@ -65,32 +65,30 @@ refresh-toc -->
 
 2. As a Site Visitor I can create an account so that I can interact with the content, add my own content and search for content.
 
-3. As a Site Visitor I can view questions other people have had about the site.
-
-4. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
+3. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
 
 #### Site User
 
-5. As a Site User I can create, read, update and delete posts so that I can manage my content.
+4. As a Site User I can create, read, update and delete posts so that I can manage my content.
 
-6. As A Site User I can search for posts so I can find the relevant one for me.
+5. As A Site User I can search for posts so I can find the relevant one for me.
 
-7. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
 
-8. As a Site User I can read comments so that I can get a nuanced view of the news.
+7. As a Site User I can read comments so that I can get a nuanced view of the news.
 
-9. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
+8. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
 
 
 #### Site owner goals
 
-10. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
+9. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
 
-11. As a Site Admin I can draft news posts so that I dont have to finish writing the news posts right way.
+10. As a Site Admin I can draft news posts so that I dont have to finish writing the news posts right way.
 
-12. As a Site Admin I can search for posts so that I can find posts I am interested in.
+11. As a Site Admin I can search for posts so that I can find posts I am interested in.
 
-13. As a Site Admin I can answer questions so that users feel included in the site.
+12. As a Site Admin I can answer questions so that users feel included in the site.
 
 ### Technical design
 
@@ -134,6 +132,56 @@ refresh-toc -->
 
     1. As a Site Visitor I can read news so I can keep up to speed with the world.
     5. As a Site User I can create, read, update and delete posts so that I can manage my content.
+<hr>
+
+* **Account creation**
+
+* A feature was implemented for a user to create an account
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    2. As a Site Visitor I can create an account so that I can interact with the content, add my own content and search for content.
+<hr>
+
+* **Questions**
+
+* A feature was implemented where the admin answers users questions
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    3. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
+<hr>
+
+* **Crud**
+
+**Requires log in**
+
+* A feature was implemented so users can create, read, update and delete their posts
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    4. As a Site User I can create, read, update and delete posts so that I can manage my content.
+    9. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
+<hr>
+
+* **Search**
+
+**Requires log in**
+
+* A feature was implemented so users can search for content
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    5. As A Site User I can search for posts so I can find the relevant one for me.
+    11. As a Site Admin I can search for posts so that I can find posts I am interested in.
 <hr>
 
 
