@@ -126,7 +126,7 @@ refresh-toc -->
 
 * The opening of the site shows a list of posts
 <br>
-<img src="">
+<img src="docs/features/feature_view_news.JPG">
 
 ### User stories covered by this feature:
 
@@ -138,7 +138,7 @@ refresh-toc -->
 
 * A feature was implemented for a user to create an account
 <br>
-<img src="">
+<img src="docs/features/feature_register.png">
 
 ### User stories covered by this feature:
 
@@ -149,7 +149,7 @@ refresh-toc -->
 
 * A feature was implemented where the admin answers users questions
 <br>
-<img src="">
+<img src="docs/features/feature_question.png">
 
 ### User stories covered by this feature:
 
@@ -162,7 +162,7 @@ refresh-toc -->
 
 * A feature was implemented so users can create, read, update and delete their posts
 <br>
-<img src="">
+<img src="docs/features/feature_crud.png">
 
 ### User stories covered by this feature:
 
@@ -176,7 +176,7 @@ refresh-toc -->
 
 * A feature was implemented so users can search for content
 <br>
-<img src="">
+<img src="docs/features/feature_search.png">
 
 ### User stories covered by this feature:
 
@@ -190,7 +190,7 @@ refresh-toc -->
 
 * A feature was implemented so users can click on a post to read it
 <br>
-<img src="">
+<img src="docs/features/feature_read_post.png">
 
 ### User stories covered by this feature:
 
@@ -204,7 +204,7 @@ refresh-toc -->
 
 * A feature was implemented so users see comments made underneath the post
 <br>
-<img src="">
+<img src="docs/features/feature_read_comment.png">
 
 ### User stories covered by this feature:
 
@@ -218,7 +218,7 @@ refresh-toc -->
 
 * A feature was implemented so users can make comments on posts
 <br>
-<img src="">
+<img src="docs/features/feature_make_comment.png">
 
 ### User stories covered by this feature:
 
@@ -233,7 +233,7 @@ refresh-toc -->
 
 * A feature was implemented so the admin can manage the content on the page
 <br>
-<img src="">
+<img src="docs/features/feature_admin_crud.png">
 
 ### User stories covered by this feature:
 
@@ -246,7 +246,7 @@ refresh-toc -->
 
 * A feature was implemented so the admin can mark posts with warnings to keep track of abusing users
 <br>
-<img src="">
+<img src="docs/features/feature_admin_warning.png">
 
 ### User stories covered by this feature:
 
@@ -259,7 +259,7 @@ refresh-toc -->
 
 * A feature was implemented so the admin can search for posts
 <br>
-<img src="">
+<img src="docs/features/feature_admin_search.png">
 
 ### User stories covered by this feature:
 
@@ -272,7 +272,7 @@ refresh-toc -->
 
 * A feature was implemented so the admin can answer and post questions
 <br>
-<img src="">
+<img src="docs/features/feature_admin_question.JPG">
 
 ### User stories covered by this feature:
 
