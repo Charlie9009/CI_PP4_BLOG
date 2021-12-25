@@ -13,9 +13,9 @@
         {% else %}
         <!-- For loop to post all searched titles -->
         {% for post in post_list %}
-        <li id="search-results-list">
-          <a href="{% url 'post_detail' post.pk  %}" id="search-results">{{ post.title }}</a>
-        </li>
+          <li id="search-results-list">
+            <a href="{% url 'post_detail' post.pk  %}" id="search-results">{{ post.title }}</a>
+          </li>
         {% endfor %}
         {% endif %}
       </ul>
