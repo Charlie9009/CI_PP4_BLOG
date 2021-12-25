@@ -84,7 +84,7 @@ refresh-toc -->
 
 9. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
 
-10. As a Site Admin I can draft news posts so that I dont have to finish writing the news posts right way.
+10. As a Site Admin I can mark posts with warnings so that I can keep track of users abusing the page.
 
 11. As a Site Admin I can search for posts so that I can find posts I am interested in.
 
@@ -131,7 +131,7 @@ refresh-toc -->
 ### User stories covered by this feature:
 
     1. As a Site Visitor I can read news so I can keep up to speed with the world.
-    5. As a Site User I can create, read, update and delete posts so that I can manage my content.
+    4. As a Site User I can create, read, update and delete posts so that I can manage my content.
 <hr>
 
 * **Account creation**
@@ -184,6 +184,101 @@ refresh-toc -->
     11. As a Site Admin I can search for posts so that I can find posts I am interested in.
 <hr>
 
+* **Open Post**
+
+**Requires log in**
+
+* A feature was implemented so users can click on a post to read it
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+    7. As a Site User I can read comments so that I can get a nuanced view of the news.
+<hr>
+
+* **Read Comments**
+
+**Requires log in**
+
+* A feature was implemented so users see comments made underneath the post
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+    7. As a Site User I can read comments so that I can get a nuanced view of the news.
+<hr>
+
+* **Make Comments**
+
+**Requires log in**
+
+* A feature was implemented so users can make comments on posts
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+    7. As a Site User I can read comments so that I can get a nuanced view of the news.
+    8. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
+<hr>
+
+* **Admin Crud**
+
+**Requires superuser**
+
+* A feature was implemented so the admin can manage the content on the page
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    9. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
+<hr>
+
+* **Admin Warning**
+
+**Requires superuser**
+
+* A feature was implemented so the admin can mark posts with warnings to keep track of abusing users
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    10. As a Site Admin I can mark posts with warnings so that I can keep track of users abusing the page.
+<hr>
+
+* **Admin Search**
+
+**Requires superuser**
+
+* A feature was implemented so the admin can search for posts
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+<hr>
+
+* **Admin Questions**
+
+**Requires superuser**
+
+* A feature was implemented so the admin can answer and post questions
+<br>
+<img src="">
+
+### User stories covered by this feature:
+
+    5. As A Site User I can search for posts so I can find the relevant one for me.
+    11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+<hr>
 
 ### Features left to implement
 
