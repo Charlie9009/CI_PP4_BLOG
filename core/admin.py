@@ -5,6 +5,7 @@ from django.contrib import admin
 from .models import Post, Comment, Question
 
 
+@admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     """
     Create class and variables to make reading, finding, searching
@@ -13,9 +14,6 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'status', 'created_on')
     list_filter = ("status",)
     search_fields = ['title', 'content']
-
-
-admin.site.register(Post, PostAdmin)
 
 
 @admin.register(Comment)
@@ -34,7 +32,7 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 @admin.register(Question)
-class QuestionAdmin(admin.ModelAdmin):     
+class QuestionAdmin(admin.ModelAdmin):
     list_display = ('title', 'question', 'answer', 'created_on', 'answered_on')
     list_filter = ('title', 'question', 'answer', 'created_on', 'answered_on')
     search_fields = ('title', 'question', 'created_on', 'answered_on')

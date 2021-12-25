@@ -1,8 +1,8 @@
 """
 Import from django, models module and from forms module.
 """
-from django.views import generic, View
-from django.shortcuts import render, get_object_or_404
+from django.views import generic
+from django.shortcuts import render
 from django.db.models import Q
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Post, Question, Comment
@@ -25,13 +25,17 @@ class PostDetail(LoginRequiredMixin, generic.DetailView):
     This class 'PostDetail' was first taken from Code Institutes school project
     'DjangoBlog'
     and then reworked a bit for this project.
-    It is added so that a user can get the posts displayed and be able
-    to make a comment
+    It is added so that a user can get the posts displayed on the post_detail
+    page and see comments as well as make comments
+    logged in user is required for functionality
     """
     model = Post
     template_name = 'post_detail.html'
 
     def get(self, request, pk, *args, **kwargs):
+        """
+        Get posts and comments and show them on post_detail page.
+        """
         post = Post.objects.get(pk=pk)
         comment_form = CommentForm()
         comments = Comment.objects.filter(post=post).order_by('-created_on')
@@ -42,8 +46,10 @@ class PostDetail(LoginRequiredMixin, generic.DetailView):
         }
         return render(request, 'post_detail.html', context)
 
-
-    def post(self, request, pk, *args, **kwargs):
+    def post(self, request, pk):
+        """
+        Function for commenting on page.
+        """
         post = Post.objects.get(pk=pk)
         comment_form = CommentForm(request.POST)
 
@@ -52,7 +58,7 @@ class PostDetail(LoginRequiredMixin, generic.DetailView):
             comment.name = request.user
             comment.post = post
             comment.save()
-        
+
         comments = Comment.objects.filter(post=post).order_by('-created_on')
         context = {
             'post': post,
@@ -63,6 +69,10 @@ class PostDetail(LoginRequiredMixin, generic.DetailView):
 
 
 class PostCreate(LoginRequiredMixin, generic.CreateView):
+    """
+    Get model, template and which fields to use for creating
+    posts, logged in user is required for functionality
+    """
     model = Post
     template_name = 'post_create.html'
     fields = ['title', 'content']
@@ -75,6 +85,10 @@ class PostCreate(LoginRequiredMixin, generic.CreateView):
 
 
 class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+    """
+    Get model, template and which fields to use for updating
+    posts, logged in user is required for functionality
+    """
     model = Post
     template_name = 'post_update.html'
     fields = ['title', 'content']
@@ -84,10 +98,11 @@ class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
-    """
+
+    def test_func(self):
+        """
     Check if specific post is the authors so they can update
     """
-    def test_func(self):
         post = self.get_object()
         if self.request.user == post.author:
             return True
@@ -95,6 +110,11 @@ class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
 
 
 class PostDelete(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
+    """
+    Get model and which template to use for deleting
+    posts, logged in user is required for functionality
+    Go back to home page when deleted post
+    """
     model = Post
     template_name = 'post_delete_confirm.html'
     success_url = '/'
@@ -129,5 +149,9 @@ class SearchResultsView(generic.ListView):
 
 
 class QuestionView(generic.ListView):
-    queryset = Question.objects.filter(answered_on=True).order_by('-answered_on')
+    """
+    Get a queryset of questions and template of question.
+    """
+    queryset = Question.objects.filter(
+        answered_on=True).order_by('-answered_on')
     template_name = 'question.html'
