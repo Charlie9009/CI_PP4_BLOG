@@ -3,18 +3,20 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<h1 class="main-header">Create your new post here!</h1>
 <!-- Container for signup page content -->
-<div class="col-md-8 card mb-4 mt-3 container-color-rounder">
-  <div class="card-body">
+<div class="container mt-5 news-post-container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 container-color-rounder question-search-container-text">
     <!-- Container successfull comment -->
     <!-- Container for comment form -->
     <form method="post">
       {{ form | crispy }}
       {% csrf_token %}
-      <button id="comment-submit-button" type="submit">Submit</button>
+      <button class="submit-button" type="submit">Submit</button>
       
     </form>
-
+</div>
   </div>
 </div>
 {% endblock content %}
