@@ -14,10 +14,14 @@
           <h1 class="card-title post-comment-headling">{{ post.title }}</h1>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <!-- Slice content to 600 -->
-          <p class="card-text">{{post.content|slice:":600" }}</p>
+          <p class="card-text">{{post.content|slice:":300" }}</p>
           <!-- Link to read the entire article -->
+          {% if user.is_authenticated %}
           <a href="{% url 'post_detail' post.id  %}" class="btn btn-secondary">Read The Entire Article Here</a>
+          {% else %}
+          <a href="{% url 'account_signup' %}" class="btn btn-secondary">Register Here To See Full Post</a>
           <hr>
+          {% endif %}
           <!-- Comments, If/Else statement used so not logged in users cant see comments -->
           <h2 class="post-comment-headling">Comments</h2>
           {% if not user.is_authenticated %}
