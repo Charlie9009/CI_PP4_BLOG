@@ -63,36 +63,34 @@ refresh-toc -->
 
 1. As a Site Visitor I can read news so I can keep up to speed with the world.
 
-2. As a Site Visitor I can see a list of news posts so that I can choose which ones to read.
+2. As a Site Visitor I can create an account so that I can interact with the content, add my own content and search for content.
 
-3. As a Site Visitor I can create an account so that I can interact with the content, add my own content and search for content.
+3. As a Site Visitor I can view questions other people have had about the site.
 
-4. As a Site Visitor I can view questions other people have had about the site.
-
-5. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
+4. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
 
 #### Site User
 
-6. As a Site User I can create, read, update and delete posts so that I can manage my content.
+5. As a Site User I can create, read, update and delete posts so that I can manage my content.
 
-7. As A Site User I can search for posts so I can find the relevant one for me.
+6. As A Site User I can search for posts so I can find the relevant one for me.
 
-8. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+7. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
 
-9. As a Site User I can read comments so that I can get a nuanced view of the news.
+8. As a Site User I can read comments so that I can get a nuanced view of the news.
 
-10. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
+9. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
 
 
 #### Site owner goals
 
-11. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
+10. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
 
-12. As a Site Admin I can draft news posts so that I dont have to finish writing the news posts right way.
+11. As a Site Admin I can draft news posts so that I dont have to finish writing the news posts right way.
 
-13. As a Site Admin I can search for posts so that I can find posts I am interested in.
+12. As a Site Admin I can search for posts so that I can find posts I am interested in.
 
-14. As a Site Admin I can answer questions so that users feel included in the site.
+13. As a Site Admin I can answer questions so that users feel included in the site.
 
 ### Technical design
 
@@ -126,15 +124,16 @@ refresh-toc -->
 
 ## Features
 
-* **Naming your character**
+* **News List**
 
-* .
+* The opening of the site shows a list of posts
 <br>
 <img src="">
 
 ### User stories covered by this feature:
 
-* 3. .
+    1. As a Site Visitor I can read news so I can keep up to speed with the world.
+    5. As a Site User I can create, read, update and delete posts so that I can manage my content.
 <hr>
 
 
@@ -392,11 +391,15 @@ refresh-toc -->
 
 * For the search function I used the [learn django](https://learndjango.com/tutorials/django-search-tutorial) site to set it up and used [django project](https://docs.djangoproject.com/en/3.1/topics/db/queries/#complex-lookups-with-q-objects) to use Q objects.
 
+#### Articles used for site
+
 * Author: By Stephen Collinson and Maeve Reston [CNN](https://edition.cnn.com/2020/11/07/politics/joe-biden-wins-us-presidential-election/index.html).
 
 * [The Guardian](https://www.theguardian.com/world/2021/dec/21/eu-in-row-over-inclusion-of-gas-and-nuclear-in-sustainability-guidance)
 
 * Author: Neil Lupin/Getty [The Rolling Stone](https://www.rollingstone.com/music/music-news/eric-clapton-management-statement-widow-bootleg-cd-1275158/)
+
+* Author: Amar Mehta [Sky News](https://news.sky.com/story/james-webb-space-telescope-begins-voyage-back-to-the-birth-of-the-universe-after-perfect-launch-12503731)
 
 
 ### I mainly watched these videos to get inspiration for my own project
