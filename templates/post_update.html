@@ -1,27 +1,21 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
 {% load crispy_forms_tags %}
+
 {% block content %}
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-md-3 col-sm-6">
-            <a href="{% url 'post_detail' post.id %}" class="btn btn-light">Back to Feed</a>
-        </div>
+<h1 class="main-header">Update your post here!</h1>
+<!-- Container for updating a post -->
+<div class="container mt-5 news-post-container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 container-color-rounder question-search-container-text">
+      <!-- Form for updating post -->
+      <form method="post">
+        {{ form | crispy }}
+        {% csrf_token %}
+        <button class="btn btn-success submit-button" type="submit">Update</button>
+        <a href="{% url 'post_detail' post.id %}" class="btn btn-light submit-button">Back to post</a>
+      </form>
     </div>
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-5 col-sm-12">
-            <h5>Update Your Post</h5>
-        </div>
-    </div>
-    <div class="row justify-content-center mt-3 mb-5">
-        <div class="col-md-5 col-sm-12">
-            <form method="POST">
-                {% csrf_token %}
-                {{ form | crispy }}
-                <div class="d-grid gap-2">
-                    <button class="btn btn-success mt-3">Submit!</button>
-                </div>
-            </form>
-        </div>
-    </div>
+  </div>
 </div>
 {% endblock content %}
