@@ -11,12 +11,12 @@
         <h1 class="post-comment-headling">{{ post.title }}</h1>
         <strong><p class="text-muted">{{ post.author }} | posted on {{ post.created_on }}</p></strong>
         <p class="card-text">{{ post.content | safe }}</p>
+        {% if request.user == post.author %}
+          <a class="btn btn-success submit-button" href="{% url 'post_update' post.id %}">Edit</a>
+          <a class="btn btn-danger submit-button" href="{% url 'post_delete' post.id %}">Delete</a>
+        {% endif %}
       </div>
     </div>
-    {% if request.user == post.author %}
-      <a href="{% url 'post_update' post.id %}">Edit</a>
-      <a href="{% url 'post_delete' post.id %}">Delete</a>
-      {% endif %}
     <!-- Container for Comments, for loop used to get all comments -->
     <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
       <div class="card-body">
@@ -45,7 +45,7 @@
         <form method="post">
           {{ comment_form | crispy }}
           {% csrf_token %}
-          <button class="btn btn-light" id="comment-submit-button" type="submit">Submit</button>
+          <button class="btn btn-success" id="comment-submit-button" type="submit">Submit</button>
         </form>
         {% endif %}
       </div>

@@ -13,7 +13,7 @@
         {{ form | crispy }}
         {% csrf_token %}
         <button class="btn btn-success submit-button" type="submit">Update</button>
-        <a href="{% url 'post_detail' post.id %}" class="btn btn-light submit-button">Back to post</a>
+        <a class="btn btn-light submit-button" href="{% url 'post_detail' post.id %}">Back to post</a>
       </form>
     </div>
   </div>
