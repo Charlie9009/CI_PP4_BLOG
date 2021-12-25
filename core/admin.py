@@ -33,6 +33,10 @@ class CommentAdmin(admin.ModelAdmin):
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
+    """
+    Create class and variables to make reading, finding, searching
+    and filtering questions easier
+    """
     list_display = ('title', 'question', 'answer', 'created_on', 'answered_on')
     list_filter = ('title', 'question', 'answer', 'created_on', 'answered_on')
     search_fields = ('title', 'question', 'created_on', 'answered_on')
