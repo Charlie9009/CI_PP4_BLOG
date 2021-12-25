@@ -8,11 +8,15 @@
       <h1>Search Results</h1>
       <ul>
         <!-- For loop to post all searched titles -->
+        {% if not user.is_authenticated %}
+          <a href="{% url 'account_login' %}" id="search-results">Log in to see search results</a>
+        {% else %}
         {% for post in post_list %}
         <li id="search-results-list">
           <a href="{% url 'post_detail' post.pk  %}" id="search-results">{{ post.title }}</a>
         </li>
         {% endfor %}
+        {% endif %}
       </ul>
     </div>
   </div>
