@@ -11,8 +11,8 @@
       <div class="card inner-post-container">
         <div class="card-body container-color-rounder">
           <!-- Post content -->
-          <h1 class="card-title post-comment-headling">{{ post.title }}</h1>
-          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+          <h2 class="card-title post-comment-headling">{{ post.title }}</h2>
+          <p class="card-text h6"><strong>{{ post.author }} | {{ post.created_on}} </strong></p>
           <!-- Slice content to 600 -->
           <p class="card-text">{{post.content|slice:":300" }}</p>
           <!-- Link to read the entire article -->
@@ -23,7 +23,7 @@
           <hr>
           {% endif %}
           <!-- Comments, If/Else statement used so not logged in users cant see comments -->
-          <h2 class="post-comment-headling">Comments</h2>
+          <h3 class="post-comment-headling">Comments</h3>
           {% if not user.is_authenticated %}
           <p>Log in to see comments</p>
           {% else %}

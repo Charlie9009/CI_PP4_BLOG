@@ -9,7 +9,7 @@
     <div class="col-md-8 card mb-4 mt-3 left top container-color-rounder">
       <div class="card-body">
         <h1 class="post-comment-headling">{{ post.title }}</h1>
-        <strong><p class="text-muted">{{ post.author }} | posted on {{ post.created_on }}</p></strong>
+        <p class="card-text h6"><strong>{{ post.author }} | {{ post.created_on}} </strong></p>
         <p class="card-text">{{ post.content | safe }}</p>
         {% if request.user == post.author %}
           <a class="btn btn-success submit-button" href="{% url 'post_update' post.id %}">Edit</a>
