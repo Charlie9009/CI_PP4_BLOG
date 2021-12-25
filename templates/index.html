@@ -5,7 +5,7 @@
 <!-- Container for News Post content -->
 <div class="container news-post-container">
   <div class="row edge-color-style">
-    <div class="col-8 col-md-8 bg-light p-3 border container-color-rounder">
+    <div class="col-12 col-md-12 bg-light p-3 border container-color-rounder">
       <!-- For loop to get posts to display on page -->
       {% for post in posts %}
       <div class="card inner-post-container">
@@ -40,43 +40,6 @@
         </div>
       </div>
       <hr>
-      {% endfor %}
-    </div>
-    <!-- Container for News Post content -->
-    <div class="col-4 bg-light p-3 border container-color-rounder">
-      <!-- For loop to get posts to display on page -->
-      {% for post in post %}
-      <div class="card inner-post-container">
-        <div class="card-body">
-          <!-- Post content -->
-          <h1 class="card-title post-comment-headling">{{ post.title }}</h1>
-          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-          <p class="card-text">{{post.content|slice:":200" }}</p>
-          <!-- Link to read the Entire article -->
-          <a href="{% url 'post_detail' post.id  %}" class="btn btn-secondary">Read The Entire Article Here</a>
-          <hr>
-          <!-- Comments, If/Else statement used so not logged in users cant see comments -->
-          <h2 class="post-comment-headling">Comments</h2>
-          {% if not user.is_authenticated %}
-          <p>Log in to see comments</p>
-          {% else %}
-          <!-- If/Else statement used to determine if there has not been any comments yet, if there isn't a link is shown -->
-          {% if not post.comments.all %}
-          <p>No Comments Yet <a href="{% url 'post_detail' post.id  %}" class="empty-comment-link">Add One Here</a></p>
-          {% else %}
-          <!-- Comment content -->
-          {% for comment in post.comments.all %}
-          <div>
-            <strong>{{ comment.name }} | {{ comment.created_on }}</strong>
-            <br>
-            <p>{{ comment.body }}</p>
-          </div>
-          <hr>
-          {% endfor %}
-          {% endif %}
-          {% endif %}
-        </div>
-      </div>
       {% endfor %}
     </div>
   </div>
