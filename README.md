@@ -96,12 +96,33 @@ refresh-toc -->
 
 ### Technical design
 
-* Below you can see the images of the flowchart.
+### Design
+
+* 
+
+#### Colors
+
+* 
+
+#### Fonts
+
+* 
+
+### Wireframes
+
+* Below you can see the images of the wireframes
+
+<details><summary>Wireframe</summary>
+<img src="docs/flowchart/pp3_flowchart.jpg">
+</details>
+
+### Database diagram
+
+* * Below you can see the images of the database diagram
 
 <details><summary>Flowchart</summary>
 <img src="docs/flowchart/pp3_flowchart.jpg">
 </details>
-
 
 ## Features
 
