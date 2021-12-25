@@ -42,6 +42,10 @@ nav {
   border: 1px black solid;
 }
 
+.rounder {
+  border-radius: 25px;
+}
+
 /* Index.html */
 
 .news-post-container {

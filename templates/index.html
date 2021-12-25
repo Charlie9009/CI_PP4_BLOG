@@ -4,12 +4,12 @@
 <h1 class="main-header">Welcome to News Blog!</h1>
 <!-- Container for News Post content -->
 <div class="container news-post-container">
-  <div class="row edge-color-style">
-    <div class="col-12 col-md-12  p-3 border container-color-rounder">
+  <div class="row edge-color-style rounder">
+    <div class="col-12 col-md-12 p-3 border rounder">
       <!-- For loop to get posts to display on page -->
       {% for post in posts %}
       <div class="card inner-post-container">
-        <div class="card-body">
+        <div class="card-body container-color-rounder">
           <!-- Post content -->
           <h1 class="card-title post-comment-headling">{{ post.title }}</h1>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
