@@ -147,15 +147,37 @@ refresh-toc -->
 
 * Python
 
+* HTML
+
+* CSS
+
+* Django 3.2
+
 ## Libraries and programs
 
-* Django 3.2.
+* [Github](https://github.com/)
 
-* Github
+* [Gitpod](https://gitpod.io/projects)
 
-* Gitpod
+* [VS code](https://code.visualstudio.com/)
 
-* VS code
+* [Bootstrap 5](https://getbootstrap.com/)
+
+* [Heroku for deployment and storing Postgresql database](https://id.heroku.com/login)
+
+* [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+
+* [Balsamiq](https://balsamiq.com/)
+
+* [Pep8 Online](http://pep8online.com/)
+
+* [Ami responsivedesign](http://ami.responsivedesign.is/)
+
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+* [HTML Validator](https://validator.w3.org/)
+
+* [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 ## Testing
 
