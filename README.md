@@ -559,7 +559,7 @@ refresh-toc -->
 |  Delete posts|  Click on *read more*                           | Visitor will be taken to log in page  |   Works as expected |
 |  Delete posts|  Write url for deleting post                     | Visitor will be taken to log in page  |   Works as expected |
 <details><summary>Screenshot</summary>
-<img src="docs/features/user_story_4.png">
+<img src="docs/features/not_user_story_4.png">
 </details>
 <hr>
 
@@ -575,6 +575,16 @@ refresh-toc -->
 </details>
 <hr>
 
+**If not logged in**
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|   Searching for posts      |  Fill out search bar and click *search* button  |  Visitor will not see search bar                | Works as expected   |
+|   Searching for posts      |  Write url for searching                   |  Visitor will be taken to log in page             | Works as expected   |
+<details><summary>Screenshot</summary>
+<img src="docs/features/not_user_story_5.png">
+</details>
+<hr>
+
 
 6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
 **Requires log in**
@@ -584,6 +594,16 @@ refresh-toc -->
 |   Comments underneath posts   |   Click on *read more* button  |  A user will be taken to the post and underneath comments will appear  |  Works as expected  |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_6.png">
+</details>
+<hr>
+
+**If not logged in**
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|   Comments underneath posts   |   Click on *read more* button  |  Visitor will be taken to register page                |  Works as expected  |
+|   Comments underneath posts   |   Write url for post  | Visitor will be taken to log in page                           |  Works as expected  |
+<details><summary>Screenshot</summary>
+<img src="docs/features/not_user_story_6.png">
 </details>
 <hr>
 
