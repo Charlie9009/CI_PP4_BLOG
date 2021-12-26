@@ -282,6 +282,11 @@ refresh-toc -->
 
 ### Features left to implement
 
+* Adding images to posts.
+
+* Adding the possibility for the users to have profiles to edit.
+
+* Adding news categories.
 
 ## Technologies used
 
