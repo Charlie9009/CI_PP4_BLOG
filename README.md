@@ -708,6 +708,10 @@ refresh-toc -->
 
     * **Fix:** I change ordering from *answered_on* which was a Boolean to *created_on* which is a *DateTime*, in models, views and the template.
 
+* **Bug:** Not logged in users could write search url in browser and access search results.
+
+    * **Fix:** I added LoginRequiredMixin in to class.
+
 ### Known bugs
 
 * **Bug:** When submitting a comment, if a user updates the page the comment will be submitted again.
