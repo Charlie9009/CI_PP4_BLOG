@@ -518,7 +518,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Different paths ends the game  |    Choose path     |      If the user picks a wrong path the game ends  | Works as expected   |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_2.png">
 </details>
 <hr>
 
@@ -529,7 +529,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Write your name and it stays in the story  |  Write you name | After user writes name it will show up in the story | Works as expected   |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_3.png">
 </details>
 <hr>
 
@@ -541,7 +541,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Different paths in the story   |  Choose path       |      Different story depending on choice           |   Works as expected |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_4.png">
 </details>
 <hr>
 
@@ -553,7 +553,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |   Choosing a class            |  Choose class        |   A user will be able to choose different classes  | Works as expected   |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_5.png">
 </details>
 <hr>
 
@@ -565,7 +565,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |   Display stats               |   Pick a class       |  When picking a class the stats will be displayed  |  Works as expected  |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_6.png">
 </details>
 <hr>
 
@@ -577,7 +577,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Different paths ends the game  |    Choose path     |      If the user picks a wrong path the game ends  | Works as expected   |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_7.png">
 </details>
 <hr>
 
@@ -590,7 +590,7 @@ refresh-toc -->
 |  The story has been written by the site owner |    None    |       Original story                         |  Original story     |
 |   Different paths changes the story   |    Choose path     |   Story will change with different paths     |   Works as expected |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_8.png">
 </details>
 <hr>
 
@@ -601,8 +601,16 @@ refresh-toc -->
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Different paths in the story   |  Choose path       |      Different story depending on choice           |   Works as expected |
-<details><summary>Screenshot</summary>
-<img src="">
+<details><summary>Post Screenshot</summary>
+<img src="docs/features/user_story_9_post.png">
+</details>
+
+<details><summary>Comment Screenshot</summary>
+<img src="docs/features/user_story_9_comment.png">
+</details>
+
+<details><summary>Question Screenshot</summary>
+<img src="docs/features/user_story_9_question.png">
 </details>
 <hr>
 
@@ -614,7 +622,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 | When a user finishes a story, data is sent to a sheet  |   Finish the game |  Sheet will be updated       | Works as expected   |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_10.png">
 </details>
 <hr>
 
@@ -626,7 +634,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Defeating the ogre generates loot  |   Defeating the ogre |    when defeating the ogre loot should be presented |  Works as expected |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_11.png">
 </details>
 <hr>
 
@@ -638,7 +646,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Defeating the ogre generates loot  |   Defeating the ogre |    when defeating the ogre loot should be presented |  Works as expected |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_12.png">
 </details>
 <hr>
 
