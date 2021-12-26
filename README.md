@@ -288,6 +288,8 @@ refresh-toc -->
 
 * Adding news categories.
 
+* Validation for when users successfully deletes a post.
+
 ## Technologies used
 
 ### Languages
@@ -516,7 +518,7 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Different paths ends the game  |    Choose path     |      If the user picks a wrong path the game ends  | Works as expected   |
+|  Form to fill out account info  | Click register button and fill out form |      When form is submited, user will be logged in  | Works as expected |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_2.png">
 </details>
@@ -527,7 +529,7 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Write your name and it stays in the story  |  Write you name | After user writes name it will show up in the story | Works as expected   |
+|  Page to display questions  |  Click the question button | User will be taken to the question page         | Works as expected   |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_3.png">
 </details>
@@ -539,7 +541,10 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Different paths in the story   |  Choose path       |      Different story depending on choice           |   Works as expected |
+|  Create posts|  Click on *new post* button            |          User will be taken to a form to fill out  |   Works as expected |
+|  Read posts|  Posts are present on home page, click *read more* button to read the hole post | User will be taken to post  |   Works as expected |
+|  Update posts|  Click on *read more* of own created post, click *edit* and then *update* | User will updated post  |   Works as expected |
+|  Delete posts|  Click on *read more* of own created post, click *delete* and then *yes, delete* | User will be taken to home page  |   Works as expected |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_4.png">
 </details>
@@ -551,7 +556,7 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|   Choosing a class            |  Choose class        |   A user will be able to choose different classes  | Works as expected   |
+|   Searching for posts      |  Fill out search bar and click *search* button  |   A user will be taken to search page with results underneath  | Works as expected   |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_5.png">
 </details>
@@ -563,7 +568,7 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|   Display stats               |   Pick a class       |  When picking a class the stats will be displayed  |  Works as expected  |
+|   Comments underneath posts   |   Click on *read more* button  |  A user will be taken to the post and underneath comments will appear  |  Works as expected  |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_6.png">
 </details>
