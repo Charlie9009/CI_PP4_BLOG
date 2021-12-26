@@ -418,12 +418,36 @@ refresh-toc -->
 <img src="docs/validation/wave_login_validation.JPG">
 </details>
 
+<details><summary>No errors were found on the logout.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_logout_validation.JPG">
+</details>
+
 <details><summary>No errors were found on the signup.html when passing through Wave Web Accessibility Validator.</summary>
 <img src="docs/validation/wave_register_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the question.html when passing through Wave Web Accessibility Validator.</summary>
 <img src="docs/validation/wave_question_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the delete_confirm.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_delete_confirm_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the post_create.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_post_create_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the post_detail.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_post_detail_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the post_update.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_post_update_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the search_results.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_search_results_validation.JPG">
 </details>
 <hr>
 
