@@ -123,8 +123,64 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 * Below you can see the images of the wireframes
 
-<details><summary>Wireframe</summary>
-<img src="docs/flowchart/pp3_flowchart.jpg">
+<details><summary>index.html</summary>
+<img src="docs/wireframes/index_wireframe.png">
+<img src="docs/wireframes/index_tablet_wireframe.png">
+<img src="docs/wireframes/index_mobile_wireframe.png">
+</details>
+
+<details><summary>login.html</summary>
+<img src="docs/wireframes/login_wireframe.png">
+<img src="docs/wireframes/login_tablet_wireframe.png">
+<img src="docs/wireframes/login_mobile_wireframe.png">
+</details>
+
+<details><summary>signout.html</summary>
+<img src="docs/wireframes/signout_wireframe.png">
+<img src="docs/wireframes/signout_tablet_wireframe.png">
+<img src="docs/wireframes/signout_mobile_wireframe.png">
+</details>
+
+<details><summary>register.html</summary>
+<img src="docs/wireframes/register_wireframe.png">
+<img src="docs/wireframes/register_tablet_wireframe.png">
+<img src="docs/wireframes/register_mobile_wireframe.png">
+</details>
+
+<details><summary>post_create.html</summary>
+<img src="docs/wireframes/post_create_wireframe.png">
+<img src="docs/wireframes/post_create_tablet_wireframe.png">
+<img src="docs/wireframes/post_create_mobile_wireframe.png">
+</details>
+
+<details><summary>post_delete_confirm.html</summary>
+<img src="docs/wireframes/post_delete_confirm_wireframe.png">
+<img src="docs/wireframes/post_delete_confirm_tablet_wireframe.png">
+<img src="docs/wireframes/post_delete_confirm_mobile_wireframe.png">
+</details>
+
+<details><summary>post_detail.html</summary>
+<img src="docs/wireframes/post_detail_wireframe.png">
+<img src="docs/wireframes/post_detail_tablet_wireframe.png">
+<img src="docs/wireframes/post_detail_mobile_wireframe.png">
+</details>
+
+<details><summary>post_update.html</summary>
+<img src="docs/wireframes/post_update_wireframe.png">
+<img src="docs/wireframes/post_update_tablet_wireframe.png">
+<img src="docs/wireframes/post_update_mobile_wireframe.png">
+</details>
+
+<details><summary>question.html</summary>
+<img src="docs/wireframes/question_wireframe.png">
+<img src="docs/wireframes/question_tablet_wireframe.png">
+<img src="docs/wireframes/question_mobile_wireframe.png">
+</details>
+
+<details><summary>search_results.html</summary>
+<img src="docs/wireframes/search_results_wireframe.png">
+<img src="docs/wireframes/search_results_tablet_wireframe.png">
+<img src="docs/wireframes/search_results_mobile_wireframe.png">
 </details>
 
 ### Database diagram
