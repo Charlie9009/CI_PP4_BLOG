@@ -477,19 +477,18 @@ refresh-toc -->
 
 ## Testing user stories
 
-1. .
+1. As a Site Visitor I can read news so I can keep up to speed with the world.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  The story has been written by the site owner |    None    |       Original story                         |  Original story     |
-|   Different paths changes the story   |    Choose path     |   Story will change with different paths     |   Works as expected |
+|  The newspost are on the home page |    arrive on home page    |       posts will appear on home page     |  Works as expected  |
 <details><summary>Screenshot</summary>
 <img src="">
 </details>
 <hr>
 
 
-2. .
+2. As a Site Visitor I can create an account so that I can interact with the content, add my own content and search for content.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -500,7 +499,7 @@ refresh-toc -->
 <hr>
 
 
-3. .
+3. As a Site Visitor I can view questions so that I can see what other people have had to say about the site.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -511,7 +510,7 @@ refresh-toc -->
 <hr>
 
 
-4. .
+4. As a Site User I can create, read, update and delete posts so that I can manage my content.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -522,7 +521,9 @@ refresh-toc -->
 <hr>
 
 
-5. .
+5. As A Site User I can search for posts so I can find the relevant one for me.
+
+
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -533,7 +534,7 @@ refresh-toc -->
 <hr>
 
 
-6. .
+6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -544,7 +545,7 @@ refresh-toc -->
 <hr>
 
 
-7. .
+7. As a Site User I can read comments so that I can get a nuanced view of the news.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -555,7 +556,7 @@ refresh-toc -->
 <hr>
 
 
-8. . 
+8. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -567,7 +568,7 @@ refresh-toc -->
 <hr>
 
 
-9. .
+9. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -578,7 +579,7 @@ refresh-toc -->
 <hr>
 
 
-10. .
+10. As a Site Admin I can mark posts with warnings so that I can keep track of users abusing the page.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -589,7 +590,18 @@ refresh-toc -->
 <hr>
 
 
-11. .
+11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Defeating the ogre generates loot  |   Defeating the ogre |    when defeating the ogre loot should be presented |  Works as expected |
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+<hr>
+
+
+12. As a Site Admin I can answer questions so that users feel included in the site.
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
