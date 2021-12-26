@@ -580,7 +580,7 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Different paths ends the game  |    Choose path     |      If the user picks a wrong path the game ends  | Works as expected   |
+|  Comments underneath posts  |    Click on *read more* button  |   A user will be taken to the post and underneath comments will appear  | Works as expected   |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_7.png">
 </details>
@@ -592,8 +592,7 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  The story has been written by the site owner |    None    |       Original story                         |  Original story     |
-|   Different paths changes the story   |    Choose path     |   Story will change with different paths     |   Works as expected |
+|  Form underneath comments |    Fill out form, *submit*    |       After submit user will be taken to top of the page with the newest comment at the top  |   Works as expected |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_8.png">
 </details>
@@ -605,15 +604,30 @@ refresh-toc -->
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Different paths in the story   |  Choose path       |      Different story depending on choice           |   Works as expected |
+|  Create post   |  Log in to admin site > click *post* > *add post* > Fill out form > *save*  |  Post will appear at the top of the home site  |   Works as expected |
+|  Read post   |  Log in to admin site > click *post* > choose post |      Whole post will appear           |   Works as expected |
+|  Update post   |  Log in to admin site > click *post* > choose post > update post > *save*  |      Post will be updated           |   Works as expected |
+|  Delete post   |  Log in to admin site > click *post* > choose post > delete post > *delete*  |      Post will be deleted          |   Works as expected |
 <details><summary>Post Screenshot</summary>
 <img src="docs/features/user_story_9_post.png">
 </details>
 
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Create comment   |  Log in to admin site > click *comment* > *add comment* > Fill out form > *save*  |  Comment will appear at the top of the home site  |   Works as expected |
+|  Read comment   |  Log in to admin site > click *comment* > choose comment |      Whole comment will appear           |   Works as expected |
+|  Update comment   |  Log in to admin site > click *comment* > choose comment > update comment > *save*  |      Comment will be updated           |   Works as expected |
+|  Delete comment   |  Log in to admin site > click *comment* > choose comment > delete comment > *delete*  |      Comment will be deleted          |   Works as expected |
 <details><summary>Comment Screenshot</summary>
 <img src="docs/features/user_story_9_comment.png">
 </details>
 
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Create question   |  Log in to admin site > click *question* > *add question* > Fill out form > *save*  |  Question will appear at the top of the home site  |   Works as expected |
+|  Read question   |  Log in to admin site > click *question* > choose question |      Whole question will appear           |   Works as expected |
+|  Update question   |  Log in to admin site > click *question* > choose question > update question > *save*  |      Question will be updated           |   Works as expected |
+|  Delete question   |  Log in to admin site > click *question* > choose question > delete question > *delete*  |      Question will be deleted          |   Works as expected |
 <details><summary>Question Screenshot</summary>
 <img src="docs/features/user_story_9_question.png">
 </details>
