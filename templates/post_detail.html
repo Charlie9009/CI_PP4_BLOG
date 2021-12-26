@@ -35,12 +35,10 @@
     <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
       <div class="card-body">
         <!-- Container successfull comment -->
-        {% if commented %}
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-success" id="msg" role="alert">
           Your comment have been posted
         </div>
         <!-- Container for comment form -->
-        {% else %}
         <h3 class="post-comment-headling">Leave a comment</h3>
         <form method="post">
           {{ comment_form | crispy }}
