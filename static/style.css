@@ -135,7 +135,8 @@ footer {
 /* Login, signup and register pages */
 
 .login-register-tag {
-  color: white;
+  color: black;
+  text-decoration: 1px black dotted;
 }
 
 .login-register-tag:hover {
