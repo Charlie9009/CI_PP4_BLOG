@@ -4,7 +4,7 @@
 
 <hr>
 
-## Welcome to my program []()!
+## Welcome to my Site [News Blog](https://news-blog-pp4.herokuapp.com/)!
 
 <br>
 
@@ -21,7 +21,13 @@ refresh-toc -->
 
     2. [User stories](#user-stories)
 
-    3. [Technical design](#technical-design)
+    3. [Design](#design)
+
+    4. [Technical design](#technical-design)
+
+        1. [Wireframes](#wireframes)
+
+        2. [Database diagram](#database-diagram)
 
 3. [Features](#features)
 
@@ -33,11 +39,19 @@ refresh-toc -->
 
 5. [Testing](#testing)
 
-    1. [Python](#python)
+    1. [HTML](#html)
 
-    2. [Further testing](#further-testing)
+    2. [CSS](#css)
 
-    3. [Testing user stories](#testing-user-stories)
+    3. [Python](#python)
+
+    4. [Accessibility](#accessibility)
+
+    5. [Performance](#performance)
+
+    6. [Further testing](#further-testing)
+
+    7. [Testing user stories](#testing-user-stories)
 
 6. [Bugs](#bugs)
 
