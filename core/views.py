@@ -153,5 +153,5 @@ class QuestionView(generic.ListView):
     Get a queryset of questions and template of question.
     """
     queryset = Question.objects.filter(
-        answered_on=True).order_by('-answered_on')
+        answered_on=True).order_by('-created_on')
     template_name = 'question.html'
