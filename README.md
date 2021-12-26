@@ -86,7 +86,7 @@ refresh-toc -->
 
 10. As a Site Admin I can mark posts with warnings so that I can keep track of users abusing the page.
 
-11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+11. As a Site Admin I can search for posts, comments and questions so that I can find what I am interested in.
 
 12. As a Site Admin I can answer questions so that users feel included in the site.
 
@@ -181,7 +181,6 @@ refresh-toc -->
 ### User stories covered by this feature:
 
     5. As A Site User I can search for posts so I can find the relevant one for me.
-    11. As a Site Admin I can search for posts so that I can find posts I am interested in.
 <hr>
 
 * **Open Post**
@@ -263,7 +262,7 @@ refresh-toc -->
 
 ### User stories covered by this feature:
 
-    11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+    11. As a Site Admin I can search for posts, comments and questions so that I can find what I am interested in.
 <hr>
 
 * **Admin Questions**
@@ -277,7 +276,7 @@ refresh-toc -->
 ### User stories covered by this feature:
 
     5. As A Site User I can search for posts so I can find the relevant one for me.
-    11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+    11. As a Site Admin I can search for posts, comments and questions so that I can find what I am interested in.
 <hr>
 
 ### Features left to implement
@@ -608,9 +607,10 @@ refresh-toc -->
 |  Read post   |  Log in to admin site > click *post* > choose post |      Whole post will appear           |   Works as expected |
 |  Update post   |  Log in to admin site > click *post* > choose post > update post > *save*  |      Post will be updated           |   Works as expected |
 |  Delete post   |  Log in to admin site > click *post* > choose post > delete post > *delete*  |      Post will be deleted          |   Works as expected |
-<details><summary>Post Screenshot</summary>
+<details><summary>Screenshot</summary>
 <img src="docs/features/user_story_9_post.png">
 </details>
+<hr>
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -618,9 +618,10 @@ refresh-toc -->
 |  Read comment   |  Log in to admin site > click *comment* > choose comment |      Whole comment will appear           |   Works as expected |
 |  Update comment   |  Log in to admin site > click *comment* > choose comment > update comment > *save*  |      Comment will be updated           |   Works as expected |
 |  Delete comment   |  Log in to admin site > click *comment* > choose comment > delete comment > *delete*  |      Comment will be deleted          |   Works as expected |
-<details><summary>Comment Screenshot</summary>
+<details><summary>Screenshot</summary>
 <img src="docs/features/user_story_9_comment.png">
 </details>
+<hr>
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -628,42 +629,56 @@ refresh-toc -->
 |  Read question   |  Log in to admin site > click *question* > choose question |      Whole question will appear           |   Works as expected |
 |  Update question   |  Log in to admin site > click *question* > choose question > update question > *save*  |      Question will be updated           |   Works as expected |
 |  Delete question   |  Log in to admin site > click *question* > choose question > delete question > *delete*  |      Question will be deleted          |   Works as expected |
-<details><summary>Question Screenshot</summary>
+<details><summary>Screenshot</summary>
 <img src="docs/features/user_story_9_question.png">
 </details>
 <hr>
-
 
 10. As a Site Admin I can mark posts with warnings so that I can keep track of users abusing the page.
 **Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-| When a user finishes a story, data is sent to a sheet  |   Finish the game |  Sheet will be updated       | Works as expected   |
+| Marking posts with warnings  |   Log in to admin site > click *post* > choose post > in drop down menu choose warning |  Post will be marked with warning  | Works as expected   |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_10.png">
 </details>
 <hr>
 
 
-11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+11. As a Site Admin I can search for posts, comments and questions so that I can find what I am interested in.
 **Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Defeating the ogre generates loot  |   Defeating the ogre |    when defeating the ogre loot should be presented |  Works as expected |
+|  Search post   |  Log in to admin site > click *post* > search in search bar  |  Relevant post(s) will appear  |   Works as expected |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_11.png">
 </details>
 <hr>
 
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Search comment   |  Log in to admin site > click *comment* > search in search bar  |  Relevant comment(s) will appear  |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="docs/features/user_story_11.png">
+</details>
+<hr>
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Search question   |  Log in to admin site > click *question* > search in search bar  |  Relevant question(s) will appear  |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="docs/features/user_story_11.png">
+</details>
+<hr>
 
 12. As a Site Admin I can answer questions so that users feel included in the site.
 **Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
-|  Defeating the ogre generates loot  |   Defeating the ogre |    when defeating the ogre loot should be presented |  Works as expected |
+|  Add questions  |   Log in to admin site > click *question* > click *add question* > fill out form > if answered it will appear on front end > *save* |   |  Works as expected |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_12.png">
 </details>
