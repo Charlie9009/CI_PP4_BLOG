@@ -1,6 +1,6 @@
 # News Blog
 
-<img src="">
+<img src="docs/mockups/mockups.png">
 
 <hr>
 
