@@ -102,7 +102,7 @@ refresh-toc -->
 
 #### Fonts
 
-* 
+* I chose the font [*Roboto*](https://fonts.google.com/specimen/Roboto) as it felt neutral and did not stick out.
 
 ### Wireframes
 
@@ -289,6 +289,8 @@ refresh-toc -->
 
 * Validation for when users successfully deletes a post.
 
+* Adding forgot password function.
+
 ## Technologies used
 
 ### Languages
@@ -326,6 +328,8 @@ refresh-toc -->
 * [HTML Validator](https://validator.w3.org/)
 
 * [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+* [Google Fonts](https://fonts.google.com/)
 
 ## Testing
 
