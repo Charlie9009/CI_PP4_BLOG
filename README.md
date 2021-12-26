@@ -427,15 +427,43 @@ refresh-toc -->
 * Lighthouse was used to test the performance and the speed of the site. <br>
 
 <details><summary>index.html</summary>
-<img src="docs/validation/lighthouse_index_validator.JPG">
+<img src="docs/validation/index_light.JPG">
 </details>
 
-<details><summary>users.html</summary>
-<img src="docs/validation/lighthouse_users_validator.JPG">
+<details><summary>login.html</summary>
+<img src="docs/validation/login_light.JPG">
 </details>
 
-<details><summary>contact.html</summary>
-<img src="docs/validation/lighthouse_contact_validator.JPG">
+<details><summary>logout.html</summary>
+<img src="docs/validation/logout_light.JPG">
+</details>
+
+<details><summary>post_create.html</summary>
+<img src="docs/validation/post_create_light.JPG">
+</details>
+
+<details><summary>post_delete_confirm.html</summary>
+<img src="docs/validation/post_delete_confirm_light.JPG">
+</details>
+
+<details><summary>post_detail.html</summary>
+<img src="docs/validation/post_detail_light.JPG">
+</details>
+
+<details><summary>post_update.html</summary>
+<img src="docs/validation/post_update_light.JPG">
+</details>
+
+<details><summary>question.html</summary>
+<img src="docs/validation/question_light.JPG">
+</details>
+
+<details><summary>register.html</summary>
+<img src="docs/validation/register_light.JPG">
+</details>
+
+<details><summary>search_results.html</summary>
+<img src="docs/validation/search_results_light.JPG">
 </details>
 <hr>
 
