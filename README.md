@@ -693,6 +693,10 @@ refresh-toc -->
 
     * **Fix:** I changed places in urls.py file so *search_results* was over *post_detail*.
 
+* **Bug:** Questions. The latest answered question would not appear at the top.
+
+    * **Fix:** I change ordering from *answered_on* which was a Boolean to *created_on* which is a *DateTime*, in models, views and the template.
+
 ### Known bugs
 
 
