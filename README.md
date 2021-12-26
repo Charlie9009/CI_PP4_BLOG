@@ -325,11 +325,83 @@ refresh-toc -->
 
 ### Validator testing
 
+#### HTML
+
+<details><summary>No errors were found on index.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/html_index_validator.JPG">
+</details>
+
+<details><summary>No errors were found on users.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/html_users_validator.JPG">
+</details>
+
+<details><summary>No errors were found on contact.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/html_contact_validator.JPG">
+</details>
+<hr>
+
+#### CSS
+
+<details><summary>No errors were found on the CSS file when passing through Jigsaw W3 Validator.</summary>
+<img src="docs/validation/css_validator.JPG">
+</details>
+<hr>
+
+
 #### Python
 
 <details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
 <img src="">
 </details>
+
+<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
+<img src="">
+</details>
+
+<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
+<img src="">
+</details>
+
+<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
+<img src="">
+</details>
+<hr>
+
+#### Accessibility
+
+<details><summary>No errors were found on the base/index.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_base_index_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the login.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_login_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the signup.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_register_validation.JPG">
+</details>
+
+<details><summary>No errors were found on the question.html when passing through Wave Web Accessibility Validator.</summary>
+<img src="docs/validation/wave_question_validation.JPG">
+</details>
+<hr>
+
+#### Performance
+
+* Lighthouse was used to test the performance and the speed of the site. <br>
+
+<details><summary>index.html</summary>
+<img src="docs/validation/lighthouse_index_validator.JPG">
+</details>
+
+<details><summary>users.html</summary>
+<img src="docs/validation/lighthouse_users_validator.JPG">
+</details>
+
+<details><summary>contact.html</summary>
+<img src="docs/validation/lighthouse_contact_validator.JPG">
+</details>
+<hr>
 
 
 ## Further testing
