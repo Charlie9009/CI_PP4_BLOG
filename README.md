@@ -328,15 +328,43 @@ refresh-toc -->
 #### HTML
 
 <details><summary>No errors were found on index.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/html_index_validator.JPG">
+<img src="docs/validation/index_validation.JPG">
 </details>
 
-<details><summary>No errors were found on users.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/html_users_validator.JPG">
+<details><summary>No errors were found on login.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/login_validation.JPG">
 </details>
 
-<details><summary>No errors were found on contact.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/html_contact_validator.JPG">
+<details><summary>No errors were found on logout.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/logout_validation.JPG">
+</details>
+
+<details><summary>No errors were found on post_create.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/post_create_validation.JPG">
+</details>
+
+<details><summary>No errors were found on post_delete_confirm.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/post_delete_confirm_validation.JPG">
+</details>
+
+<details><summary>No errors were found on post_detail.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/post_detail_validation.JPG">
+</details>
+
+<details><summary>No errors were found on post_update.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/post_update_validation.JPG">
+</details>
+
+<details><summary>No errors were found on question.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/question_validation.JPG">
+</details>
+
+<details><summary>No errors were found on register.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/register_validation.JPG">
+</details>
+
+<details><summary>No errors were found on search_results.html when passing through WC3 Validator.</summary>
+<img src="docs/validation/search_results_validation.JPG">
 </details>
 <hr>
 
