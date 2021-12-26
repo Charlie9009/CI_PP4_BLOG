@@ -407,6 +407,8 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 * [Google Fonts](https://fonts.google.com/)
 
+* [Database diagrams](https://app.quickdatabasediagrams.com/)
+
 ## Testing
 
 ### Validator testing
