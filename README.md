@@ -507,7 +507,7 @@ refresh-toc -->
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  The newspost are on the home page |    arrive on home page    |       posts will appear on home page     |  Works as expected  |
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/features/user_story_1.JPG">
 </details>
 <hr>
 
@@ -535,6 +535,7 @@ refresh-toc -->
 
 
 4. As a Site User I can create, read, update and delete posts so that I can manage my content.
+**Requires log in**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -546,8 +547,7 @@ refresh-toc -->
 
 
 5. As A Site User I can search for posts so I can find the relevant one for me.
-
-
+**Requires log in**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -559,6 +559,7 @@ refresh-toc -->
 
 
 6. As a Site User I can click on a post and see comments and the post so I can get a better view of the posts.
+**Requires log in**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -570,6 +571,7 @@ refresh-toc -->
 
 
 7. As a Site User I can read comments so that I can get a nuanced view of the news.
+**Requires log in**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -581,6 +583,7 @@ refresh-toc -->
 
 
 8. As a Site User I can comment on a post so that I can ask question and be a part of the conversation.
+**Requires log in**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -592,7 +595,8 @@ refresh-toc -->
 <hr>
 
 
-9. As a Site Admin I can create, read, update and delete posts so that I can manage my content.
+9. As a Site Admin I can create, read, update and delete posts, comments and questions so that I can manage my content.
+**Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -604,6 +608,7 @@ refresh-toc -->
 
 
 10. As a Site Admin I can mark posts with warnings so that I can keep track of users abusing the page.
+**Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -615,6 +620,7 @@ refresh-toc -->
 
 
 11. As a Site Admin I can search for posts so that I can find posts I am interested in.
+**Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
@@ -626,6 +632,7 @@ refresh-toc -->
 
 
 12. As a Site Admin I can answer questions so that users feel included in the site.
+**Requires superuser**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
