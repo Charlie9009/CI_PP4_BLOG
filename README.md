@@ -343,7 +343,7 @@ refresh-toc -->
 #### CSS
 
 <details><summary>No errors were found on the CSS file when passing through Jigsaw W3 Validator.</summary>
-<img src="docs/validation/css_validator.JPG">
+<img src="docs/validation/css_validation.JPG">
 </details>
 <hr>
 
