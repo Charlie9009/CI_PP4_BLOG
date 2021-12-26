@@ -768,6 +768,10 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
     * **Fix:** I added LoginRequiredMixin in to class.
 
+* **Bug:** Submit button for comments cropt to two lines when on smaller screens.
+
+    * **Fix:** I changed the width for the button when under 768px.
+
 ### Known bugs
 
 * **Bug:** When submitting a comment, if a user updates the page the comment will be submitted again.
