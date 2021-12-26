@@ -1,4 +1,5 @@
 let closeModal = document.getElementById('msg');
+let bootstrap = document.getElementsByClassName('alert-success');
 closeModal.addEventListener('click', () => {
-    closeModal.close();
+    bootstrap.close();
 });
