@@ -128,7 +128,7 @@ class PostDelete(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
         return False
 
 
-class SearchResultsView(generic.ListView):
+class SearchResultsView(LoginRequiredMixin, generic.ListView):
     """
     Setting up class to add search function to the site
     Getting the model 'Post' and the template 'search_results'

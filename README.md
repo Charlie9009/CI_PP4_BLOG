@@ -549,6 +549,20 @@ refresh-toc -->
 </details>
 <hr>
 
+**If not logged in**
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Create posts|  Click on *new post* button                  |          Visitor will not see *new post* button  |   Works as expected |
+|  Read posts|  Click *read more* button to read the hole post | Visitor will be taken to register page  |   Works as expected |
+|  Update posts|  Click on *read more*                       |      Visitor will be taken to register page  |   Works as expected |
+|  Update posts|  Write url for updating post                   |     Visitor will be taken to log in page  |   Works as expected |
+|  Delete posts|  Click on *read more*                           | Visitor will be taken to log in page  |   Works as expected |
+|  Delete posts|  Write url for deleting post                     | Visitor will be taken to log in page  |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="docs/features/user_story_4.png">
+</details>
+<hr>
+
 
 5. As A Site User I can search for posts so I can find the relevant one for me.
 **Requires log in**
@@ -684,9 +698,6 @@ refresh-toc -->
 </details>
 <hr>
 
-### API
-
-
 ## Bugs
 
 * **Bug:** Search_results.html would just give a site error and not appear.
@@ -699,6 +710,7 @@ refresh-toc -->
 
 ### Known bugs
 
+* **Bug:** When submitting a comment, if a user updates the page the comment will be submitted again.
 
 ## Deployment
 
