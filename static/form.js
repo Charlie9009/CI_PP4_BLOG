@@ -1,4 +1,4 @@
 let closeModal = document.getElementById('msg');
 closeModal.addEventListener('click', () => {
-    alert.close();
+    closeModal.close();
 });
