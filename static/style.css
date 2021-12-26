@@ -134,6 +134,15 @@ footer {
 
 /* Login, signup and register pages */
 
+.login-register-tag {
+  color: white;
+}
+
+.login-register-tag:hover {
+color: #B0C4B1;
+transition: 0.3s;
+}
+
 .submit-button {
   border-radius: 10px;
   border: 1px black solid;

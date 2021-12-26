@@ -12,7 +12,7 @@
       <h1>{% trans "Sign In" %}</h1>
       <!-- Link for signing up if user does not have an account -->
       <p>{% blocktrans %}If you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+        <a class="login-register-tag" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
       </p>
       <!-- Form for login in -->
       <form class="login" method="POST" action="{% url 'account_login' %}">
