@@ -35,16 +35,19 @@
     <div class="col-md-8 card mb-4 mt-3 container-color-rounder">
       <div class="card-body">
         <!-- Container successfull comment -->
-        <div class="alert alert-success" id="msg" role="alert">
+        {% if commented %}
+        <div class="alert alert-success" role="alert">
           Your comment have been posted
         </div>
         <!-- Container for comment form -->
+        {% else %}
         <h3 class="post-comment-headling">Leave a comment</h3>
         <form method="post">
           {{ comment_form | crispy }}
           {% csrf_token %}
           <button class="btn btn-success" id="comment-submit-button" type="submit">Submit</button>
         </form>
+        {% endif %}
       </div>
     </div>
   </div>

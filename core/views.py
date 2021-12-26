@@ -42,6 +42,7 @@ class PostDetail(LoginRequiredMixin, generic.DetailView):
         context = {
             'post': post,
             'comments': comments,
+            'commented': False,
             'comment_form': comment_form,
         }
         return render(request, 'post_detail.html', context)
@@ -63,6 +64,7 @@ class PostDetail(LoginRequiredMixin, generic.DetailView):
         context = {
             'post': post,
             'comments': comments,
+            'commented': True,
             'comment_form': comment_form,
         }
         return render(request, 'post_detail.html', context)
