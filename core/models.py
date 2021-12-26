@@ -114,7 +114,7 @@ class Question(models.Model):
         """
         Order by descending order
         """
-        ordering = ['-created_on']
+        ordering = ['-answered_on']
 
     def __str__(self):
         """
