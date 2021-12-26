@@ -155,3 +155,12 @@ footer {
   border: 1px black solid;
   transition: 0.3s;
 }
+
+/* For screens smaller then 768px */
+
+@media screen and (max-width: 768px) {
+    /* Submit button */
+    #comment-submit-button {
+      width: 40%;
+    }
+}

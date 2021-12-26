@@ -473,8 +473,6 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 #### Performance
 
-* Lighthouse was used to test the performance and the speed of the site. <br>
-
 <details><summary>index.html</summary>
 <img src="docs/validation/index_light.JPG">
 </details>
