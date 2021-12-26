@@ -549,7 +549,8 @@ refresh-toc -->
 </details>
 <hr>
 
-**If not logged in**
+* **If not logged in**
+
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Create posts|  Click on *new post* button                  |          Visitor will not see *new post* button  |   Works as expected |
@@ -575,7 +576,8 @@ refresh-toc -->
 </details>
 <hr>
 
-**If not logged in**
+* **If not logged in**
+
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |   Searching for posts      |  Fill out search bar and click *search* button  |  Visitor will not see search bar                | Works as expected   |
@@ -597,7 +599,8 @@ refresh-toc -->
 </details>
 <hr>
 
-**If not logged in**
+* **If not logged in**
+
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |   Comments underneath posts   |   Click on *read more* button  |  Visitor will be taken to register page                |  Works as expected  |
@@ -665,6 +668,16 @@ refresh-toc -->
 |  Delete question   |  Log in to admin site > click *question* > choose question > delete question > *delete*  |      Question will be deleted          |   Works as expected |
 <details><summary>Screenshot</summary>
 <img src="docs/features/user_story_9_question.png">
+</details>
+<hr>
+
+* **If not superuser**
+
+|             Feature           |        Action        |                 Expected result                    |   Actual result     |
+|            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
+|  Create post   |              Log in to admin site      |  If user isn't authorized logging in wont be possible  |   Works as expected |
+<details><summary>Screenshot</summary>
+<img src="docs/features/not_user_story_9.png">
 </details>
 <hr>
 
