@@ -378,20 +378,28 @@ refresh-toc -->
 
 #### Python
 
-<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
-<img src="">
+<details><summary>No errors were found on admin.py when passing through PEP8 Validator.</summary>
+<img src="docs/validation/admin_validation.JPG">
 </details>
 
-<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
-<img src="">
+<details><summary>No errors were found on blog_urls.py when passing through PEP8 Validator.</summary>
+<img src="docs/validation/blog_urls_validation.JPG">
 </details>
 
-<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
-<img src="">
+<details><summary>No errors were found on forms.py when passing through PEP8 Validator.</summary>
+<img src="docs/validation/forms_validation.JPG">
 </details>
 
-<details><summary>No errors were found on run.py when passing through PEP8 Validator.</summary>
-<img src="">
+<details><summary>No errors were found on models.py when passing through PEP8 Validator.</summary>
+<img src="docs/validation/models_validation.JPG">
+</details>
+
+<details><summary>No errors were found on newsblog_urls.py when passing through PEP8 Validator.</summary>
+<img src="docs/validation/newsblog_urls_validation.JPG">
+</details>
+
+<details><summary>No errors were found on views.py when passing through PEP8 Validator.</summary>
+<img src="docs/validation/views_validation.JPG">
 </details>
 <hr>
 
