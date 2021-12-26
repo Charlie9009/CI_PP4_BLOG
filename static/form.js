@@ -1,5 +1,4 @@
-setTimeout(function() {
-    let messages = document.getElementById('msg');
-    let alert = new bootstrap.Alert(messages);
+let closeModal = document.getElementById('msg');
+closeModal.addEventListener('click', () => {
     alert.close();
-}, 3000);
+});
