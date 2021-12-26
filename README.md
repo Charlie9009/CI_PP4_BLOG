@@ -45,13 +45,15 @@ refresh-toc -->
 
     3. [Python](#python)
 
-    4. [Accessibility](#accessibility)
+    4. [Javascript](#javascript)
 
-    5. [Performance](#performance)
+    5. [Accessibility](#accessibility)
 
-    6. [Further testing](#further-testing)
+    6. [Performance](#performance)
 
-    7. [Testing user stories](#testing-user-stories)
+    7. [Further testing](#further-testing)
+
+    8. [Testing user stories](#testing-user-stories)
 
 6. [Bugs](#bugs)
 
@@ -379,6 +381,8 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 * Django 3.2
 
+* Javascript
+
 ## Libraries and programs
 
 * [Github](https://github.com/)
@@ -488,6 +492,13 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 <details><summary>No errors were found on views.py when passing through PEP8 Validator.</summary>
 <img src="docs/validation/views_validation.JPG">
+</details>
+<hr>
+
+#### Javascript
+
+<details><summary>No errors were found on news.js when passing through jshint.</summary>
+<img src="docs/validation/news_validation.JPG">
 </details>
 <hr>
 
