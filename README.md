@@ -185,10 +185,15 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 ### Database diagram
 
-* * Below you can see the images of the database diagram
+* The database has three models;
+    * Post
+    * Comment
+    * Question
+* Post and Comment have a many to one relationship and also uses the imported *User* class model for username and passwords.
 
-<details><summary>Flowchart</summary>
-<img src="docs/flowchart/pp3_flowchart.jpg">
+* Question does not have any relationship with the other models.
+<details><summary>Database Diagram</summary>
+<img src="docs/database_diagram/database_diagram.JPG">
 </details>
 
 ## Features
