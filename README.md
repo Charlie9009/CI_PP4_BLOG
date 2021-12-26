@@ -94,11 +94,12 @@ refresh-toc -->
 
 ### Design
 
-* 
+* My design originated from looking at sites like [reddit](https://www.reddit.com/), [facebook](https://www.facebook.com/), [aftonbladet](https://www.aftonbladet.se/).
+I wanted a site that felt simple and delivered news easily where people could share news themselves.
 
 #### Colors
 
-* 
+* For the colors I wanted a more sophisticated clean look, after some googling I found [visme](https://visme.co/blog/website-color-schemes/) and number 7 on the list caught my attention. I took that as a starting point and experimented a bit.
 
 #### Fonts
 
