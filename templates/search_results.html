@@ -9,8 +9,8 @@
       <ul>
         <!-- For loop to post all searched titles -->
         {% for post in post_list %}
-          <li id="search-results-list">
-            <a href="{% url 'post_detail' post.pk  %}" id="search-results">{{ post.title }}</a>
+          <li class="search-results-list">
+            <a href="{% url 'post_detail' post.pk  %}" class="search-results">{{ post.title }}</a>
           </li>
         {% endfor %}
       </ul>
