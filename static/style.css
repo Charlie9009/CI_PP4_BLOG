@@ -79,7 +79,7 @@ nav {
   color: black;
 }
 
-/* Comment page */
+/* post_detail.html */
 
 .comment-container {
   border-bottom: 1px black solid;
@@ -103,6 +103,11 @@ nav {
   transition: 0.3s;
 }
 
+.success-form {
+  text-align: center;
+  margin-top: 3%;
+}
+
 /* Footer */
 
 footer {
@@ -111,7 +116,7 @@ footer {
   color: black;
 }
 
-/* search-results.html */
+/* search_results.html */
 
 .search-results {
   text-decoration: none;
