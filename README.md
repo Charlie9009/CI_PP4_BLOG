@@ -638,6 +638,8 @@ refresh-toc -->
 9. As a Site Admin I can create, read, update and delete posts, comments and questions so that I can manage my content.
 **Requires superuser**
 
+* **Post**
+
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Create post   |  Log in to admin site > click *post* > *add post* > Fill out form > *save*  |  Post will appear at the top of the home site  |   Works as expected |
@@ -649,6 +651,8 @@ refresh-toc -->
 </details>
 <hr>
 
+* **Comment**
+
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
 |  Create comment   |  Log in to admin site > click *comment* > *add comment* > Fill out form > *save*  |  Comment will appear at the top of the home site  |   Works as expected |
@@ -659,6 +663,8 @@ refresh-toc -->
 <img src="docs/features/user_story_9_comment.png">
 </details>
 <hr>
+
+* **Question**
 
 |             Feature           |        Action        |                 Expected result                    |   Actual result     |
 |            :----------:       |    :------------:    |               :-----------------:                  | :---------------:   |
