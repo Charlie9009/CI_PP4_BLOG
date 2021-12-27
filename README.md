@@ -420,50 +420,50 @@ I wanted a site that felt simple and delivered news easily where people could sh
 #### HTML
 
 <details><summary>No errors were found on index.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/index_validation.JPG">
+<img src="docs/validation/html/index_validation.JPG">
 </details>
 
 <details><summary>No errors were found on login.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/login_validation.JPG">
+<img src="docs/validation/html/login_validation.JPG">
 </details>
 
 <details><summary>No errors were found on logout.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/logout_validation.JPG">
+<img src="docs/validation/html/logout_validation.JPG">
 </details>
 
 <details><summary>No errors were found on post_create.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/post_create_validation.JPG">
+<img src="docs/validation/html/post_create_validation.JPG">
 </details>
 
 <details><summary>No errors were found on post_delete_confirm.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/post_delete_confirm_validation.JPG">
+<img src="docs/validation/html/post_delete_confirm_validation.JPG">
 </details>
 
 <details><summary>No errors were found on post_detail.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/post_detail_validation.JPG">
+<img src="docs/validation/html/post_detail_validation.JPG">
 </details>
 
 <details><summary>No errors were found on post_update.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/post_update_validation.JPG">
+<img src="docs/validation/html/post_update_validation.JPG">
 </details>
 
 <details><summary>No errors were found on question.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/question_validation.JPG">
+<img src="docs/validation/html/question_validation.JPG">
 </details>
 
 <details><summary>No errors were found on register.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/register_validation.JPG">
+<img src="docs/validation/html/register_validation.JPG">
 </details>
 
 <details><summary>No errors were found on search_results.html when passing through WC3 Validator.</summary>
-<img src="docs/validation/search_results_validation.JPG">
+<img src="docs/validation/html/search_results_validation.JPG">
 </details>
 <hr>
 
 #### CSS
 
 <details><summary>No errors were found on the CSS file when passing through Jigsaw W3 Validator.</summary>
-<img src="docs/validation/css_validation.JPG">
+<img src="docs/validation/css/css_validation.JPG">
 </details>
 <hr>
 
@@ -471,120 +471,120 @@ I wanted a site that felt simple and delivered news easily where people could sh
 #### Python
 
 <details><summary>No errors were found on admin.py when passing through PEP8 Validator.</summary>
-<img src="docs/validation/admin_validation.JPG">
+<img src="docs/validation/python/admin_validation.JPG">
 </details>
 
 <details><summary>No errors were found on blog_urls.py when passing through PEP8 Validator.</summary>
-<img src="docs/validation/blog_urls_validation.JPG">
+<img src="docs/validation/python/blog_urls_validation.JPG">
 </details>
 
 <details><summary>No errors were found on forms.py when passing through PEP8 Validator.</summary>
-<img src="docs/validation/forms_validation.JPG">
+<img src="docs/validation/python/forms_validation.JPG">
 </details>
 
 <details><summary>No errors were found on models.py when passing through PEP8 Validator.</summary>
-<img src="docs/validation/models_validation.JPG">
+<img src="docs/validation/python/models_validation.JPG">
 </details>
 
 <details><summary>No errors were found on newsblog_urls.py when passing through PEP8 Validator.</summary>
-<img src="docs/validation/newsblog_urls_validation.JPG">
+<img src="docs/validation/python/newsblog_urls_validation.JPG">
 </details>
 
 <details><summary>No errors were found on views.py when passing through PEP8 Validator.</summary>
-<img src="docs/validation/views_validation.JPG">
+<img src="docs/validation/python/views_validation.JPG">
 </details>
 <hr>
 
 #### Javascript
 
 <details><summary>No errors were found on news.js when passing through jshint.</summary>
-<img src="docs/validation/news_validation.JPG">
+<img src="docs/validation/javascript/news_validation.JPG">
 </details>
 <hr>
 
 #### Accessibility
 
 <details><summary>No errors were found on the base/index.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_base_index_validation.JPG">
+<img src="docs/validation/accessibility/wave_base_index_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the login.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_login_validation.JPG">
+<img src="docs/validation/accessibility/wave_login_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the logout.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_logout_validation.JPG">
+<img src="docs/validation/accessibility/wave_logout_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the signup.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_register_validation.JPG">
+<img src="docs/validation/accessibility/wave_register_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the question.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_question_validation.JPG">
+<img src="docs/validation/accessibility/wave_question_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the delete_confirm.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_delete_confirm_validation.JPG">
+<img src="docs/validation/accessibility/wave_delete_confirm_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the post_create.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_post_create_validation.JPG">
+<img src="docs/validation/accessibility/wave_post_create_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the post_detail.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_post_detail_validation.JPG">
+<img src="docs/validation/accessibility/wave_post_detail_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the post_update.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_post_update_validation.JPG">
+<img src="docs/validation/accessibility/wave_post_update_validation.JPG">
 </details>
 
 <details><summary>No errors were found on the search_results.html when passing through Wave Web Accessibility Validator.</summary>
-<img src="docs/validation/wave_search_results_validation.JPG">
+<img src="docs/validation/accessibility/wave_search_results_validation.JPG">
 </details>
 <hr>
 
 #### Performance
 
 <details><summary>index.html</summary>
-<img src="docs/validation/index_light.JPG">
+<img src="docs/validation/lighthouse/index_light.JPG">
 </details>
 
 <details><summary>login.html</summary>
-<img src="docs/validation/login_light.JPG">
+<img src="docs/validation/lighthouse/login_light.JPG">
 </details>
 
 <details><summary>logout.html</summary>
-<img src="docs/validation/logout_light.JPG">
+<img src="docs/validation/lighthouse/logout_light.JPG">
 </details>
 
 <details><summary>post_create.html</summary>
-<img src="docs/validation/post_create_light.JPG">
+<img src="docs/validation/lighthouse/post_create_light.JPG">
 </details>
 
 <details><summary>post_delete_confirm.html</summary>
-<img src="docs/validation/post_delete_confirm_light.JPG">
+<img src="docs/validation/lighthouse/post_delete_confirm_light.JPG">
 </details>
 
 <details><summary>post_detail.html</summary>
-<img src="docs/validation/post_detail_light.JPG">
+<img src="docs/validation/lighthouse/post_detail_light.JPG">
 </details>
 
 <details><summary>post_update.html</summary>
-<img src="docs/validation/post_update_light.JPG">
+<img src="docs/validation/lighthouse/post_update_light.JPG">
 </details>
 
 <details><summary>question.html</summary>
-<img src="docs/validation/question_light.JPG">
+<img src="docs/validation/lighthouse/question_light.JPG">
 </details>
 
 <details><summary>register.html</summary>
-<img src="docs/validation/register_light.JPG">
+<img src="docs/validation/lighthouse/register_light.JPG">
 </details>
 
 <details><summary>search_results.html</summary>
-<img src="docs/validation/search_results_light.JPG">
+<img src="docs/validation/lighthouse/search_results_light.JPG">
 </details>
 <hr>
 
