@@ -79,6 +79,7 @@ class PostCreate(LoginRequiredMixin, generic.CreateView):
     template_name = 'post_create.html'
     fields = ['title', 'content']
     """
+    Code from Corey Schafers video(see readme file credit)
     Set author for form before submit.
     """
     def form_valid(self, form):
@@ -98,13 +99,17 @@ class PostUpdate(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     Set author for form before submit.
     """
     def form_valid(self, form):
+        """
+        Code from Corey Schafers video(see readme file credit)
+        """
         form.instance.author = self.request.user
         return super().form_valid(form)
 
     def test_func(self):
         """
-    Check if specific post is the authors so they can update
-    """
+        Code from Corey Schafers video(see readme file credit)
+        Check if specific post is the authors so they can update
+        """
         post = self.get_object()
         if self.request.user == post.author:
             return True
@@ -121,6 +126,7 @@ class PostDelete(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     template_name = 'post_delete_confirm.html'
     success_url = '/'
     """
+    Code from Corey Schafers video(see readme file credit)
     Check if specific post is the authors so they can delete
     """
     def test_func(self):
