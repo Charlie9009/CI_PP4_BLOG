@@ -589,7 +589,19 @@ I wanted a site that felt simple and delivered news easily where people could sh
 <hr>
 
 
+## Browser Compatibility
+
+* Chrome: The website is combatible and behaves as expected.
+
+* Firefox: The website is combatible and behaves as expected.
+
+* Edge: The website is combatible and behaves as expected.
+
 ## Further testing
+
+* I have tested the website on One Plus 8T
+
+* Friends and family has been asked to review the site.
 
 ## Testing user stories
 
@@ -846,6 +858,10 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
     * **Fix:** I changed the width for the button when under 768px.
 
+* **Bug:** Modal for submitting a comment would not show up.
+
+    **Fix:** In views.py a commented variable was added then used as an if statement to see if a user have submitted form. If so show the modal.
+
 ### Known bugs
 
 * **Bug:** When submitting a comment, if a user updates the page the comment will be submitted again.
@@ -904,7 +920,30 @@ I wanted a site that felt simple and delivered news easily where people could sh
 
 ## Credit
 
-###
+### Numerous videos, sites and articles was used to create this site.
+
+* This video was a heavy influens for the project and understanding django better! [Corey Schafer](https://www.youtube.com/watch?v=-s7e_Fy6NRU&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=10)
+
+* This video was watched for understanding how to build the comment section. [Codemy](https://www.youtube.com/watch?v=hZrlh4qU4eQ)
+
+* For understanding django and the post, comment, models, editing, deleting and restricting views. These three articles was read and followed along with.
+    * [Legionscript Part 2 Social Feed and Posts](https://legionscript.medium.com/building-a-social-media-site-with-python-and-django-part-2-social-feed-and-posts-b9009f809b74)
+    * [Legionscript Part 3 Get Post, Comment Model and Form](https://legionscript.medium.com/building-a-social-media-site-with-python-and-django-part-3-get-post-comment-model-and-form-4e50eceeed2b)
+    * [Legionscript Part 4 Edit/Delete Posts, Add Comments, Restricted Views](https://legionscript.medium.com/building-a-social-media-site-with-python-and-django-part-4-edit-delete-posts-add-comments-8e6ca1ef0441)
+
+* For building the blog site this article was read and followed along with. [Django Central](https://djangocentral.com/building-a-blog-application-with-django/)
+
+* For building the comment section this article was read and followed along with. [Django Central](https://djangocentral.com/creating-comments-system-with-django/)
+
+* To get a better understanding of class based views. [Classy Class Based Views](https://ccbv.co.uk/)
+
+* To get a better understanding of querys. [Django Project](https://docs.djangoproject.com/en/4.0/topics/db/queries/)
+
+* To get a better understanding of the messages framework. [Django Project](https://docs.djangoproject.com/en/4.0/ref/contrib/messages/)
+
+* To get a better understanding of classes and LoginRequiredMixin. [PY4Y](https://www.py4u.net/discuss/218421)
+
+* To get a better understanding of how urls work. [Django Girls](https://tutorial.djangogirls.org/en/django_urls/)
 
 * [Developer mozillas](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication) site was used to get authentication up and running , in combination with Code Institutes way of importing files for html and using [Django allauth](https://django-allauth.readthedocs.io/en/latest/templates.html#overridable-templates) to connect the files.
 
@@ -923,9 +962,6 @@ I wanted a site that felt simple and delivered news easily where people could sh
 * Author: Neil Lupin/Getty [The Rolling Stone](https://www.rollingstone.com/music/music-news/eric-clapton-management-statement-widow-bootleg-cd-1275158/)
 
 * Author: Amar Mehta [Sky News](https://news.sky.com/story/james-webb-space-telescope-begins-voyage-back-to-the-birth-of-the-universe-after-perfect-launch-12503731)
-
-
-### I mainly watched these videos to get inspiration for my own project
 
 
 ## Acknowledgement
